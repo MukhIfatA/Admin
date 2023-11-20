@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Atlantis Lite - Bootstrap 4 Admin Dashboard</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="aset/3324336-200.png" type="image/x-icon" />
+
+	<!-- Fonts and icons -->
+	<script src="assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: { "families": ["Lato:300,400,700,900"] },
+			custom: { "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['assets/css/fonts.min.css'] },
+			active: function () {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/atlantis.min.css">
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link rel="stylesheet" href="assets/css/demo.css">
+</head>
+
+<body data-background-color="dark">
+	<div class="wrapper">
+		<div class="main-header">
+			<!-- Logo Header -->
+			<div class="logo-header" data-background-color="dark2">
+
+				<a href="index.html" class="logo">
+					<i class="fas fa-user" style="color: white;"></i>
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
+					data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="icon-menu"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+				<div class="nav-toggle">
+					<button class="btn btn-toggle toggle-sidebar">
+						<i class="icon-menu"></i>
+					</button>
+				</div>
+			</div>
+			<!-- End Logo Header -->
+
+			<!-- Navbar Header -->
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark">
+
+				<div class="container-fluid">
+					<div class="collapse" id="search-nav">
+						<form class="navbar-left navbar-form nav-search mr-md-3">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<button type="submit" class="btn btn-search pr-1">
+										<i class="fa fa-search search-icon"></i>
+									</button>
+								</div>
+								<input type="text" placeholder="Search ..." class="form-control">
+							</div>
+						</form>
+					</div>
+					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item toggle-nav-search hidden-caret">
+							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button"
+								aria-expanded="false" aria-controls="search-nav">
+								<i class="fa fa-search"></i>
+							</a>
+						</li>
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fa fa-envelope"></i>
+							</a>
+							<ul class="dropdown-menu messages-notif-box animated fadeIn"
+								aria-labelledby="messageDropdown">
+								<li>
+									<div class="dropdown-title d-flex justify-content-between align-items-center">
+										Messages
+										<a href="#" class="small">Mark all as read</a>
+									</div>
+								</li>
+								<li>
+									<div class="message-notif-scroll scrollbar-outer">
+										<div class="notif-center">
+											<a href="#">
+												<div class="notif-img">
+													<img src="assets/img/jm_denis.jpg" alt="Img Profile">
+												</div>
+												<div class="notif-content">
+													<span class="subject">Jimmy Denis</span>
+													<span class="block">
+														How are you ?
+													</span>
+													<span class="time">5 minutes ago</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="notif-img">
+													<img src="assets/img/chadengle.jpg" alt="Img Profile">
+												</div>
+												<div class="notif-content">
+													<span class="subject">Chad</span>
+													<span class="block">
+														Ok, Thanks !
+													</span>
+													<span class="time">12 minutes ago</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="notif-img">
+													<img src="assets/img/mlane.jpg" alt="Img Profile">
+												</div>
+												<div class="notif-content">
+													<span class="subject">Jhon Doe</span>
+													<span class="block">
+														Ready for the meeting today...
+													</span>
+													<span class="time">12 minutes ago</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="notif-img">
+													<img src="assets/img/talha.jpg" alt="Img Profile">
+												</div>
+												<div class="notif-content">
+													<span class="subject">Talha</span>
+													<span class="block">
+														Hi, Apa Kabar ?
+													</span>
+													<span class="time">17 minutes ago</span>
+												</div>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="see-all" href="javascript:void(0);">See all messages<i
+											class="fa fa-angle-right"></i> </a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fa fa-bell"></i>
+								<span class="notification">4</span>
+							</a>
+							<ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+								<li>
+									<div class="dropdown-title">You have 4 new notification</div>
+								</li>
+								<li>
+									<div class="notif-scroll scrollbar-outer">
+										<div class="notif-center">
+											<a href="#">
+												<div class="notif-icon notif-primary"> <i class="fa fa-user-plus"></i>
+												</div>
+												<div class="notif-content">
+													<span class="block">
+														New user registered
+													</span>
+													<span class="time">5 minutes ago</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="notif-icon notif-success"> <i class="fa fa-comment"></i>
+												</div>
+												<div class="notif-content">
+													<span class="block">
+														Rahmad commented on Admin
+													</span>
+													<span class="time">12 minutes ago</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="notif-img">
+													<img src="assets/img/profile2.jpg" alt="Img Profile">
+												</div>
+												<div class="notif-content">
+													<span class="block">
+														Reza send messages to you
+													</span>
+													<span class="time">12 minutes ago</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="notif-icon notif-danger"> <i class="fa fa-heart"></i> </div>
+												<div class="notif-content">
+													<span class="block">
+														Farrah liked Admin
+													</span>
+													<span class="time">17 minutes ago</span>
+												</div>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="see-all" href="javascript:void(0);">See all notifications<i
+											class="fa fa-angle-right"></i> </a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">
+								<i class="fas fa-layer-group"></i>
+							</a>
+							<div class="dropdown-menu quick-actions quick-actions-info animated fadeIn">
+								<div class="quick-actions-header">
+									<span class="title mb-1">Quick Actions</span>
+									<span class="subtitle op-8">Shortcuts</span>
+								</div>
+								<div class="quick-actions-scroll scrollbar-outer">
+									<div class="quick-actions-items">
+										<div class="row m-0">
+											<a class="col-6 col-md-4 p-0" href="#">
+												<div class="quick-actions-item">
+													<i class="flaticon-file-1"></i>
+													<span class="text">Generated Report</span>
+												</div>
+											</a>
+											<a class="col-6 col-md-4 p-0" href="#">
+												<div class="quick-actions-item">
+													<i class="flaticon-database"></i>
+													<span class="text">Create New Database</span>
+												</div>
+											</a>
+											<a class="col-6 col-md-4 p-0" href="#">
+												<div class="quick-actions-item">
+													<i class="flaticon-pen"></i>
+													<span class="text">Create New Post</span>
+												</div>
+											</a>
+											<a class="col-6 col-md-4 p-0" href="#">
+												<div class="quick-actions-item">
+													<i class="flaticon-interface-1"></i>
+													<span class="text">Create New Task</span>
+												</div>
+											</a>
+											<a class="col-6 col-md-4 p-0" href="#">
+												<div class="quick-actions-item">
+													<i class="flaticon-list"></i>
+													<span class="text">Completed Tasks</span>
+												</div>
+											</a>
+											<a class="col-6 col-md-4 p-0" href="#">
+												<div class="quick-actions-item">
+													<i class="flaticon-file"></i>
+													<span class="text">Create New Invoice</span>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown hidden-caret">
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
+								aria-expanded="false">
+								<div class="avatar-sm">
+									<img src="assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+								</div>
+							</a>
+							<ul class="dropdown-menu dropdown-user animated fadeIn">
+								<div class="dropdown-user-scroll scrollbar-outer">
+									<li>
+										<div class="user-box">
+											<div class="avatar-lg"><img src="assets/img/profile.jpg" alt="image profile"
+													class="avatar-img rounded"></div>
+											<div class="u-text">
+												<h4>Hizrian</h4>
+												<p class="text-muted">hello@example.com</p><a href="profile.html"
+													class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">My Profile</a>
+										<a class="dropdown-item" href="#">My Balance</a>
+										<a class="dropdown-item" href="#">Inbox</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Account Setting</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Logout</a>
+									</li>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- End Navbar -->
+		</div>
+
+		<!-- Sidebar -->
+		<div class="sidebar sidebar-style-2" data-background-color="dark2">
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+					<div class="user">
+						<div class="avatar-sm float-left mr-2">
+							<img src="assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+						</div>
+						<div class="info">
+							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+								<span>
+									Hizrian
+									<span class="user-level">Administrator</span>
+									<span class="caret"></span>
+								</span>
+							</a>
+							<div class="clearfix"></div>
+
+							<div class="collapse in" id="collapseExample">
+								<ul class="nav">
+									<li>
+										<a href="#profile">
+											<span class="link-collapse">My Profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="#edit">
+											<span class="link-collapse">Edit Profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="#settings">
+											<span class="link-collapse">Settings</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<ul class="nav nav-primary">
+						<li class="nav-item active">
+							<!-- class="collapsed" data-toggle="collapse"-->
+							<a href="starter-template.html" aria-expanded="false">
+								<i class="fas fa-home"></i>
+								<p>Dashboard</p>
+								<!-- <span class="caret"></span> -->
+							</a>
+							<div class="collapse" id="dashboard">
+								<ul class="nav nav-collapse">
+									<!-- <li>
+												<a href="demo1/index.html">
+													<span class="sub-item">Dashboard 1</span>
+												</a>
+											</li> -->
+									<!-- <li>
+												<a href="demo2/index.html">
+													<span class="sub-item">Dashboard 2</span>
+												</a>
+											</li> -->
+								</ul>
+							</div>
+						</li>
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Menu</h4>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#rekrutmen">
+								<i class="
+										fas fa-user-plus"></i>
+								<p>Rekrutmen & Seleksi</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="rekrutmen">
+								<ul class="nav nav-collapse">
+									<li class="active">
+										<a href="avatars.html">
+											<span class="sub-item active">Dashboard</span>
+										</a>
+									</li>
+									<li>
+										<a href="components/buttons.html">
+											<span class="sub-item">Permintaan Tenaga Kerja</span>
+										</a>
+									</li>
+									<li>
+										<a href="components/gridsystem.html">
+											<span class="sub-item">Job Requirement</span>
+										</a>
+									</li>
+									<li>
+										<a href="components/panels.html">
+											<span class="sub-item">Job Posting & Pengelolaan Pengumuman</span>
+										</a>
+									</li>
+									<li>
+										<!-- <a href="components/notifications.html"> -->
+										<a data-toggle="collapse" href="#subnav1">
+											<span class="sub-item">Proses Seleksi</span>
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="subnav1">
+											<ul class="nav nav-collapse subnav">
+												<li>
+													<a data-toggle="collapse" href="#subnav4">
+														<span class="sub-item">Bank Data Pelamar</span>
+														<span class="caret"></span>
+													</a>
+													<div class="collapse" id="subnav4">
+														<ul class="nav nav-collapse subnav">
+															<li>
+																<a href="components/gridsystem.html">
+																	<span class="sub-item">Form Pendaftaran Karyawan
+																		Baru</span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<span class="sub-item">Undangan Pelamar </span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<span class="sub-item">Pemberian Penawaran</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a data-toggle="collapse" href="#subnav3">
+														<span class="sub-item">Psikotes</span>
+														<span class="caret"></span>
+													</a>
+													<div class="collapse" id="subnav3">
+														<ul class="nav nav-collapse subnav">
+															<li>
+																<a href="#">
+																	<span class="sub-item">CFIT(Mengukur
+																		Intelegensi)</span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<span class="sub-item">DISC TEST(Kepribadian
+																		Karakter Diri)</span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<span class="sub-item">PAPI Kostick(Kepribadian
+																		Situasi/ Gaya Kerja)</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a data-toggle="collapse" href="#subnav2">
+														<span class="sub-item">Interview</span>
+														<span class="caret"></span>
+													</a>
+													<div class="collapse" id="subnav2">
+														<ul class="nav nav-collapse subnav">
+															<li>
+																<a href="#">
+																	<span class="sub-item">Interview HR</span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<span class="sub-item">Interview USER </span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<span class="sub-item">Interview MANAGEMENT</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<!-- </a> -->
+									</li>
+									<li>
+										<!-- <a href="components/sweetalert.html"> -->
+										<a href="tables/datatables.html">
+											<span class="sub-item">Database Karyawan</span>
+
+										</a>
+									</li>
+
+						</li>
+
+				</div>
+				</li>
+				<li class="nav-item">
+					<a data-toggle="collapse" href="#sidebarLayouts">
+						<i class="
+								fas fa-money-check-alt"></i>
+						<p>Kompensasi & Benefit</p>
+						<span class="caret"></span>
+					</a>
+					<div class="collapse" id="sidebarLayouts">
+						<ul class="nav nav-collapse">
+							<li>
+								<a href="sidebar-style-1.html">
+									<span class="sub-item">Dashboard</span>
+								</a>
+							</li>
+							<li>
+								<a href="overlay-sidebar.html">
+									<span class="sub-item">Job Grading</span>
+								</a>
+							</li>
+							<li>
+							<li>
+								<a data-toggle="collapse" href="#subnav9">
+									<span class="sub-item">Absensi</span>
+									<span class="caret"></span>
+								</a>
+								<div class="collapse" id="subnav9">
+									<ul class="nav nav-collapse subnav">
+										<li>
+											<a data-toggle="collapse" href="#subnav10">
+												<span class="sub-item">Pengaturan Kalender Kerja</span>
+												<span class="caret"></span>
+											</a>
+											<div class="collapse" id="subnav10">
+												<ul class="nav nav-collapse subnav">
+													<li>
+														<a href="#">
+															<span class="sub-item">Pengaturan Hari Libur</span>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<span class="sub-item">Pengaturan Jadwal Kerja</span>
+														</a>
+													</li>
+
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a data-toggle="collapse" href="#subnav11">
+												<span class="sub-item">Permohonan Absensi</span>
+												<span class="caret"></span>
+											</a>
+											<div class="collapse" id="subnav11">
+												<ul class="nav nav-collapse subnav">
+													<li>
+														<a href="#">
+															<span class="sub-item">Cuti</span>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<span class="sub-item">Sakit</span>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<span class="sub-item">Izin/Izin Khusus</span>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<span class="sub-item">Perjalanan Dinas</span>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<span class="sub-item">Revisi Finger</span>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<span class="sub-item">Keterlambatan</span>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<span class="sub-item">Meninggalkan Perusahan</span>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<span class="sub-item">Lembur</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+				</li>
+				<li>
+					<a data-toggle="collapse" href="#subnav12">
+						<span class="sub-item">Kompensasi</span>
+						<span class="caret"></span>
+					</a>
+					<div class="collapse" id="subnav12">
+						<ul class="nav nav-collapse subnav">
+							<li>
+								<a href="#">
+									<span class="sub-item">Gaji Bulanan</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="sub-item">Gaji Harian</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="sub-item">Gaji Borongan</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="sub-item">Uang Saku</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a data-toggle="collapse" href="#subnav13">
+						<span class="sub-item">Benefit</span>
+						<span class="caret"></span>
+					</a>
+					<div class="collapse" id="subnav13">
+						<ul class="nav nav-collapse subnav">
+							<li>
+								<a href="#">
+									<span class="sub-item">Tunjangan Hari Raya</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="sub-item">BPJS Kesehatan</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="sub-item">BPJS Ketenagakerjaan</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="sub-item">Intensif & Bonus</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="sub-item">Peminjaman Karyawan</span>
+								</a>
+							</li>
+							<li>
+								<a data-toggle="collapse" href="#subnav30">
+									<span class="sub-item">PHK</span>
+									<span class="caret"></span>
+								</a>
+								<div class="collapse" id="subnav30">
+									<ul class="nav nav-collapse subnav">
+										<li>
+											<a href="#">
+												<span class="sub-item">Pensiun</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="sub-item">Kompensasi</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="sub-item">PHK</span>
+											</a>
+										</li>
+
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a data-toggle="collapse" href="#subnav14">
+									<span class="sub-item">Tali Asih</span>
+									<span class="caret"></span>
+								</a>
+								<div class="collapse" id="subnav14">
+									<ul class="nav nav-collapse subnav">
+										<li>
+											<a href="#">
+												<span class="sub-item">Menikah</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="sub-item">Melahirkan</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="sub-item">Meninggal</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="sub-item">Kecelakaan Kerja</span>
+											</a>
+										</li>
+
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				</ul>
+			</div>
+			</li>
+			<li class="nav-item">
+				<a data-toggle="collapse" href="#forms">
+					<i class="
+								fas fa-cogs"></i>
+					<p>Development</p>
+					<span class="caret"></span>
+				</a>
+				<div class="collapse" id="forms">
+					<ul class="nav nav-collapse">
+						<li>
+							<a href="forms/forms.html">
+								<span class="sub-item">Dashboard</span>
+							</a>
+						</li>
+						<li>
+							<a data-toggle="collapse" href="#subnav15">
+								<span class="sub-item">Organization Development</span>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="subnav15">
+								<ul class="nav nav-collapse subnav">
+									<li>
+										<a href="#">
+											<span class="sub-item">Budaya Perusahaan</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">Visi</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">Misi</span>
+										</a>
+									</li>
+									<li>
+										<a data-toggle="collapse" href="#subnav16">
+											<span class="sub-item">Company Objective</span>
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="subnav16">
+											<ul class="nav nav-collapse subnav">
+												<li>
+													<a href="#">
+														<span class="sub-item">Form Company Objective</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="sub-item">Form Penilaian Karyawan</span>
+													</a>
+												</li>
+
+
+											</ul>
+
+										</div>
+									</li>
+									<li>
+										<a data-toggle="collapse" href="#subnav17">
+											<span class="sub-item">Struktur Organisasi</span>
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="subnav17">
+											<ul class="nav nav-collapse subnav">
+												<li>
+													<a href="#">
+														<span class="sub-item">Divisi</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="sub-item">Departemen</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="sub-item">Workstation</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="sub-item">Unit</span>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">Man Power Planing</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						<li>
+							<a data-toggle="collapse" href="#subnav18">
+								<span class="sub-item">People Development</span>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="subnav18">
+								<ul class="nav nav-collapse subnav">
+									<li>
+										<a href="#">
+											<span class="sub-item">Job Description</span>
+										</a>
+									</li>
+									<li>
+										<a data-toggle="collapse" href="#subnav19">
+											<span class="sub-item">Pelatihan & Pengembangan</span>
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="subnav19">
+											<ul class="nav nav-collapse subnav">
+												<li>
+													<a data-toggle="collapse" href="#subnav20">
+														<span class="sub-item">Training Need Analysis</span>
+														<span class="caret"></span>
+													</a>
+													<div class="collapse" id="subnav20">
+														<ul class="nav nav-collapse subnav">
+															<li>
+																<a href="#">
+																	<span class="sub-item">Permohonan Training</span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<span class="sub-item">Usulan Identifikasi Kebutuhan
+																		Pelatihan</span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<span class="sub-item">Matrix Competency</span>
+																</a>
+															</li>
+
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a data-toggle="collapse" href="#subnav21">
+														<span class="sub-item">Training Design</span>
+														<span class="caret"></span>
+													</a>
+													<div class="collapse" id="subnav21">
+														<ul class="nav nav-collapse subnav">
+															<li>
+																<a href="#">
+																	<span class="sub-item">Training Design</span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<span class="sub-item">Resume Design
+																		Pelatihan</span>
+																</a>
+
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a data-toggle="collapse" href="#subnav22">
+														<span class="sub-item">Training Excution</span>
+														<span class="caret"></span>
+													</a>
+													<div class="collapse" id="subnav22">
+														<ul class="nav nav-collapse subnav">
+															<li>
+																<a href="#">
+																	<span class="sub-item">Jadwal & Informasi
+																		Pelatihan</span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<span class="sub-item">Daftar Hadir Pelatihan</span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<span class="sub-item">Evaluasi Pelaksanaan
+																		Pelatihan</span>
+																</a>
+															</li>
+
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a data-toggle="collapse" href="#subnav23">
+														<span class="sub-item">Training Evaluasi</span>
+														<span class="caret"></span>
+													</a>
+													<div class="collapse" id="subnav23">
+														<ul class="nav nav-collapse subnav">
+															<li>
+																<a href="#">
+																	<span class="sub-item">Evaluasi Hasil
+																		Pelatihan</span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<span class="sub-item">Evaluasi Implementasi Hasil
+																		Pelatihan</span>
+																</a>
+															</li>
+
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a href="#">
+														<span class="sub-item">Materi Training</span>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a data-toggle="collapse" href="#subnav24">
+											<span class="sub-item">Psychology Asesment</span>
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="subnav24">
+											<ul class="nav nav-collapse subnav">
+												<li>
+													<a href="#">
+														<span class="sub-item">Pengajuan Nama Karyawan Untuk Psychology
+															Asesment</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="sub-item">Proses Psychology Assesment</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="sub-item">Scoring dan Hasil (Dinamika
+															Kepribadian)</span>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a data-toggle="collapse" href="#subnav25">
+											<span class="sub-item">Promosi Mutasi Demosi</span>
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="subnav25">
+											<ul class="nav nav-collapse subnav">
+												<li>
+													<a href="#">
+														<span class="sub-item">Promosi</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="sub-item">Mutasi</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="sub-item">Demosi</span>
+													</a>
+												</li>
+
+											</ul>
+
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">Penilaian Kerja</span>
+										</a>
+									</li>
+
+
+
+						</li>
+					</ul>
+				</div>
+			</li>
+			</ul>
+		</div>
+		</li>
+		<li class="nav-item">
+			<a data-toggle="collapse" href="#tables">
+				<i class="
+								fas fa-handshake"></i>
+				<p>Industrial Relation</p>
+				<span class="caret"></span>
+			</a>
+			<div class="collapse" id="tables">
+				<ul class="nav nav-collapse">
+					<li>
+						<a href="tables/tables.html">
+							<span class="sub-item">Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a href="tables/datatables.html">
+							<span class="sub-item">Peraturan Perusahaan</span>
+						</a>
+					</li>
+					<li>
+						<a data-toggle="collapse" href="#subnav26">
+							<span class="sub-item">Kontrak Kerja Karyawan</span>
+							<span class="caret"></span>
+						</a>
+						<div class="collapse" id="subnav26">
+							<ul class="nav nav-collapse subnav">
+								<li>
+									<a href="#">
+										<span class="sub-item">Percobaan</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sub-item">PKWT</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sub-item">PKWTT</span>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a data-toggle="collapse" href="#subnav27">
+							<span class="sub-item">Managemen Karyawan</span>
+							<span class="caret"></span>
+						</a>
+						<div class="collapse" id="subnav27">
+							<ul class="nav nav-collapse subnav">
+								<li>
+									<a href="#">
+										<span class="sub-item">Employee Dialog</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sub-item">Surat Peringatan</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sub-item">PHK</span>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a data-toggle="collapse" href="#subnav28">
+							<span class="sub-item">Resign</span>
+							<span class="caret"></span>
+						</a>
+						<div class="collapse" id="subnav28">
+							<ul class="nav nav-collapse subnav">
+								<li>
+									<a href="#">
+										<span class="sub-item">Pengajuan Resign</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sub-item">Exit Interview</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sub-item">Surat Pengalaman Kerja</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sub-item">Pengembalian Aset</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="nav-item">
+			<a data-toggle="collapse" href="#maps">
+				<i class="
+								fas fa-users-cog"></i>
+				<p>Pengaturan akun </p>
+				<span class="caret"></span>
+			</a>
+			<div class="collapse" id="maps">
+				<ul class="nav nav-collapse">
+					<li>
+						<a href="maps/jqvmap.html">
+							<span class="sub-item">Perusahaan</span>
+						</a>
+					</li>
+					<li>
+						<a href="maps/jqvmap.html">
+							<span class="sub-item">Master Data</span>
+						</a>
+					</li>
+					<li>
+						<a href="maps/jqvmap.html">
+							<span class="sub-item">Setting Peran & Hak Akses</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+		</ul>
+	</div>
+	</div>
+	</div>
+	<!-- End Sidebar -->
+
+	<div class="main-panel">
+		<div class="content">
+			<div class="page-inner">
+				<div class="page-header">
+					<h4 class="page-title">Dashboard</h4>
+					<ul class="breadcrumbs">
+						<li class="nav-home">
+							<a href="#">
+								<i class="flaticon-home"></i>
+							</a>
+						</li>
+						<li class="separator">
+							<i class="flaticon-right-arrow"></i>
+						</li>
+						<li class="nav-item">
+							<a href="#">Pages</a>
+						</li>
+						<li class="separator">
+							<i class="flaticon-right-arrow"></i>
+						</li>
+						<li class="nav-item">
+							<a href="#">Starter Page</a>
+						</li>
+					</ul>
+				</div>
+				<div class="page-category">
+
+					<div class="card">
+						<div class="card-body">
+							<h2>Hi Admin</h2>
+						</div>
+					</div>
+					<div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="card">
+									<div class="card-header">
+										<div class="card-title">Line Chart</div>
+									</div>
+									<div class="card-body">
+										<div class="chart-container">
+											<canvas id="myChart"></canvas>
+										</div>
+									</div>
+								</div>
+								<style>
+									/* width */
+									::-webkit-scrollbar {
+										width: 1px;
+									}
+
+									/* Track */
+									::-webkit-scrollbar-track {
+
+										border-radius: 10px;
+									}
+
+									/* Handle */
+									::-webkit-scrollbar-thumb {
+										background: rgb(110, 110, 110);
+										border-radius: 10px;
+									}
+
+									/* Handle on hover */
+									::-webkit-scrollbar-thumb:hover {
+										background: #ffecec;
+									}
+								</style>
+								<div class="card" style="width: 100%; overflow: auto;">
+									<div class="card-body">
+										<div class="card-title">
+											Tabel
+										</div>
+										<table class="table mt-3">
+											<thead>
+												<tr>
+													<th scope="col">#</th>
+													<th scope="col">First</th>
+													<th scope="col">Last</th>
+													<th scope="col">Handle</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td colspan="2">Larry the Bird</td>
+													<td>@twitter</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-6">
+								<img src="aset/4203236-removebg-preview.png" alt=""
+									style="background-color: transparent; height: 350px;">
+								<div class="card">
+									<div class="card-header">
+										<div class="card-title">Line Chart</div>
+									</div>
+									<div class="card-body">
+										<div class="chart-container">
+											<canvas id="lineChart"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container-fluid">
+				<nav class="pull-left">
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.themekita.com">
+								ThemeKita
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								Help
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								Licenses
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="copyright ml-auto">
+					2018, made with <i class="fa fa-heart heart text-danger"></i> by <a
+						href="https://www.themekita.com">ThemeKita</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	</div>
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+	<!--   Core JS Files   -->
+	<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="assets/js/core/popper.min.js"></script>
+	<script src="assets/js/core/bootstrap.min.js"></script>
+
+	<!-- jQuery UI -->
+	<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+	<!-- jQuery Scrollbar -->
+	<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+
+	<!-- Chart JS -->
+	<script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+	<!-- jQuery Sparkline -->
+	<script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+	<!-- Chart Circle -->
+	<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+	<!-- Datatables -->
+	<script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+	<!-- Bootstrap Notify -->
+	<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+	<!-- jQuery Vector Maps -->
+	<script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+	<script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+	<!-- Sweet Alert -->
+	<script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+	<!-- Atlantis JS -->
+	<script src="assets/js/atlantis.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+	<script>
+		const ctx = document.getElementById('myChart');
+
+		new Chart(ctx, {
+			type: 'bar',
+			data: {
+				labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+				datasets: [{
+					label: '# of Votes',
+					data: [100, 19, 3, 5, 2, 3],
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					y: {
+						beginAtZero: true
+					}
+				}
+			}
+		});
+		const cx = document.getElementById('lineChart');
+
+		new Chart(cx, {
+			type: 'pie',
+			data: {
+				labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+				datasets: [{
+					label: '# of Votes',
+					data: [30, 19, 100, 50, 23, 13],
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					y: {
+						beginAtZero: true
+					}
+				}
+			}
+		});
+	</script>
+
+</body>
+
+</html>
