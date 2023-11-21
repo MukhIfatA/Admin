@@ -6,7 +6,7 @@
 	<title>Buttons - Atlantis Lite Bootstrap 4 Admin Dashboard</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 	<link rel="icon" href="../assets/img/icon.ico" type="image/x-icon" />
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Fonts and icons -->
 	<script src="../assets/js/plugin/webfont/webfont.min.js"></script>
 	<script>
@@ -365,6 +365,16 @@
 							</a>
 							<div class="collapse" id="dashboard">
 								<ul class="nav nav-collapse">
+									<!-- <li>
+												<a href="../demo1/index.html">
+													<span class="sub-item">Dashboard 1</span>
+												</a>
+											</li> -->
+									<!-- <li>
+												<a href="../demo2/index.html">
+													<span class="sub-item">Dashboard 2</span>
+												</a>
+											</li> -->
 								</ul>
 							</div>
 						</li>
@@ -384,22 +394,22 @@
 							<div class="collapse" id="rekrutmen">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="../dashboard.html">
+										<a href="avatars.html">
 											<span class="sub-item">Dashboard</span>
 										</a>
 									</li>
-									<li>
-										<a href="../components/permintaan.html">
+									<li class="active">
+										<a href="components/buttons.html">
 											<span class="sub-item ">Permintaan Tenaga Kerja</span>
 										</a>
 									</li>
 									<li>
-										<a href="components/jobreqruitment.html">
+										<a href="components/gridsystem.html">
 											<span class="sub-item">Job Requirement</span>
 										</a>
 									</li>
 									<li>
-										<a href="jobposting.html">
+										<a href="components/panels.html">
 											<span class="sub-item">Job Posting & Pengelolaan Pengumuman</span>
 										</a>
 									</li>
@@ -418,7 +428,7 @@
 													</a>
 													<div class="collapse" id="subnav4">
 														<ul class="nav nav-collapse subnav">
-															<li class="active">
+															<li>
 																<a href="gridsystem.html">
 																	<span class="sub-item">Form Pendaftaran Karyawan
 																		Baru</span>
@@ -445,7 +455,7 @@
 													<div class="collapse" id="subnav3">
 														<ul class="nav nav-collapse subnav">
 															<li>
-																<a href="psikotes.html">
+																<a href="#">
 																	<span class="sub-item">CFIT(Mengukur
 																		Intelegensi)</span>
 																</a>
@@ -472,14 +482,14 @@
 													</a>
 													<div class="collapse" id="subnav2">
 														<ul class="nav nav-collapse subnav">
-
 															<li>
-																<a href="intervewhr.html">
+
+																<a href="notifications.html">
 																	<span class="sub-item">Interview HR</span>
 																</a>
 															</li>
 															<li>
-																<a href="interviewuser.html">
+																<a href="panels.html">
 																	<span class="sub-item">Interview USER </span>
 																</a>
 															</li>
@@ -501,11 +511,11 @@
 										<!-- </a> -->
 									</li>
 									<li>
-										<!-- <a href="components/sweetalert.html"> -->
-										<a href="../tables/database.html">
-											<span class="sub-item">Database Karyawan</span>
 
+										<a href="../tables/datatables.html">
+											<span class="sub-item">Database Karyawan</span>
 										</a>
+
 									</li>
 									<!-- </a> -->
 						</li>
@@ -1294,228 +1304,297 @@
 					</ul>
 				</div>
 
-				<div class="card m-3d-flex md">
 
-					<div class="card-body border-top border-5 border-warning">
-						<h5 class="card-title text-center p-3">Form Permintaan Tenaga Kerja</h5>
+
+				<!-- The Modal -->
+				<div class="modal" id="myModal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<h4 class="modal-title">Permintaan Tenaga Kerja</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<!-- Modal body -->
+							<div class="modal-body">
+
+								<div class="card m-3d-flex md">
+
+									<div class="card-body border-top border-5 border-warning">
+										<h5 class="card-title text-center p-3">Form Permintaan Tenaga Kerja</h5>
+
+									</div>
+
+
+									<form action="" method="post" enctype="multipart/form-data">
+										<div class="card m-3  md">
+											<div class="card-body border-top border-5 border-warning ">
+												<div class="row">
+													<div class="col-6">
+														<div class="mb-3">
+															<label for="exampleInputEmail1"
+																class="form-label">Permintaan
+																Posisi</label>
+															<input name="permintaan_posisi" required type="text"
+																class="form-control" id="exampleInputEmail1"
+																aria-describedby="emailHelp">
+
+														</div>
+														<div class="mb-3">
+															<label for="exampleInputEmail1" class="form-label">Standart
+																Kebutuhan</label>
+															<input name="standart_kebutuhan" required type="text"
+																class="form-control" id="exampleInputEmail1"
+																aria-describedby="emailHelp">
+
+														</div>
+														<div class="mb-3">
+															<label for="exampleInputPassword1" class="form-label">SDM
+																Tersedia</label>
+															<input name="sdm_tersedia" required type="text"
+																class="form-control" id="exampleInputPassword1">
+														</div>
+														<div class="mb-3">
+															<label for="exampleInputPassword1" class="form-label">SDM
+																Terpenuhi</label>
+															<!-- <div class="mb-3" id="emailHelp" class="form-text"></div> -->
+															<input name="sdm_terpenuhi" required type="text"
+																class="form-control" id="exampleInputPassword1">
+														</div>
+														<div class="mb-3">
+															<label for="exampleInputEmail1" class="form-label">Jumlah
+																Tenaga Kerja
+																yang dibutuhkan</label>
+															<input name="jml_tenaga_kerja" required type="text"
+																class="form-control mb-3" id="exampleInputEmail1"
+																aria-describedby="emailHelp">
+														</div>
+														<div class="mb-3">
+															<label for="exampleInputEmail1" class="form-label">Atasan
+																Langsung</label>
+															<input name="atasan_langsung" required type="text"
+																class="form-control mb-3" id="exampleInputEmail1"
+																aria-describedby="emailHelp">
+														</div><br>
+
+														<label for="cars">Status &nbsp;&nbsp;&nbsp;:</label>
+
+														<select id="cars">
+															<option value="tetap">Permanent/tetap</option>
+															<option value="Kontrak">Kontrak</option>
+															<option value="Magang">Perserta Magang</option>
+
+														</select>
+
+														<br><br>
+
+														<label for="sifat">Sifat &nbsp;&nbsp;&nbsp;
+															&nbsp;&nbsp;&nbsp;:</label>
+														<select id="sifat">
+
+															<option value="penambahan">Additional/Penambahan</option>
+															<option value="penggantian">Replacing/Penggantian</option>
+														</select>
+														<br><br>
+														<div class="mb-2">
+															<label for="source">Source &nbsp;&nbsp;:</label>
+															<select name="source" id="">
+																<option value="internal">Internal</option>
+																<option value="eksternal">Eksternal</option>
+															</select>
+														</div>
+
+														<div class="mb-3" id="so">
+															<label for="beratbadan"
+																class="form-label mb-3">berapa?</label>
+															<input name="internal" required type="text"
+																class="form-control" aria-describedby="emailHelp">
+														</div>
+
+
+													</div>
+
+													<div class="col-6">
+														<div class="mb-3 mt-2">
+
+															<label for="email" class="form-label">Tanggal
+																Diperlukan</label>
+															<input name="tgl" required type="date" class="form-control"
+																id="email" aria-describedby="emailHelp">
+														</div>
+
+
+														<div class="mb-3 mt-2">
+															<label for="diajukan" class="form-label">Diajukan
+																Oleh</label>
+															<input name="diajukan_oleh" required type="text"
+																class="form-control" id="agama"
+																aria-describedby="emailHelp">
+															<input name="diajukan_oleh" required type="datetime-local"
+																class="form-control" id="agama"
+																aria-describedby="emailHelp">
+														</div>
+														<div class="mb-auto mt-2">
+
+															<label for="Disetujui" class="form-label">Disetujui oleh
+																atasan
+																langsung</label>
+															<input name="disetujui_atasan_langsung" required type="text"
+																class="form-control" id="tinggibadan"
+																aria-describedby="emailHelp">
+															<input name="disetujui_atasan_langsung" required
+																type="datetime-local" class="form-control"
+																id="tinggibadan" aria-describedby="emailHelp">
+														</div>
+														<div class="mb-3 mt-2">
+															<label for="beratbadan" class="form-label">Disetujui oleh
+																superior
+																atasan langsung</label>
+															<input name="disetujui_superioratasan" required type="text"
+																class="form-control" id="beratbadan"
+																aria-describedby="emailHelp">
+															<input name="disetujui_superioratasan" required
+																type="datetime-local" class="form-control"
+																id="beratbadan" aria-describedby="emailHelp">
+														</div>
+
+														<div class="mb-3 mt-2">
+
+															<label for="exampleInputEmail1" class="form-label">Diterima
+																HR</label>
+															<input name="diterima_HR" required type="datetime-local"
+																class="form-control" id="exampleInputEmail1"
+																aria-describedby="emailHelp">
+														</div>
+														<div class="mb-3 mt-2">
+
+															<label for="exampleInputEmail1"
+																class="form-label">Diiklankan</label>
+															<input name="diiklankan" required type="datetime-local"
+																class="form-control" id="exampleInputEmail1"
+																aria-describedby="emailHelp">
+														</div>
+														<div class="mb-3 mt-2">
+
+															<label for="exampleInputEmail1" class="form-label">Tanggal
+																Terpenuhi</label>
+															<input name="tgl_terpenuhi" required type="datetime-local"
+																class="form-control" id="exampleInputEmail1"
+																aria-describedby="emailHelp">
+														</div>
+														<div class="mb-3 mt-2">
+
+															<label for="exampleInputEmail1"
+																class="form-label">Status</label>
+															<input name="statuss" required type="email"
+																class="form-control" id="exampleInputEmail1"
+																aria-describedby="emailHelp">
+														</div>
+
+													</div>
+													<button name="submit" type="submit"
+														class="btn  btn-warning text-light"
+														style="width: 100% ;">Submit</button>
+
+												</div>
+											</div>
+
+											<!-- Modal footer -->
+											<div class="modal-footer">
+												<button type="button" class="btn btn-danger"
+													data-bs-dismiss="modal">Close</button>
+											</div>
+
+
+										</div>
+								</div>
+								</form>
+							</div>
+
+
+						</div>
 
 					</div>
+				</div>
+			</div>
 
 
-					<form action="" method="post" enctype="multipart/form-data">
-						<div class="card m-3  md">
-							<div class="card-body border-top border-5 border-warning ">
-								<div class="row">
-									<div class="col-6">
-										<div class="mb-3">
-											<label for="exampleInputEmail1" class="form-label">Permintaan
-												Posisi</label>
-											<input name="permintaan_posisi" required type="text" class="form-control"
-												id="exampleInputEmail1" aria-describedby="emailHelp">
-
-										</div>
-										<div class="mb-3">
-											<label for="exampleInputEmail1" class="form-label">Standart
-												Kebutuhan</label>
-											<input name="standart_kebutuhan" required type="text" class="form-control"
-												id="exampleInputEmail1" aria-describedby="emailHelp">
-
-										</div>
-										<div class="mb-3">
-											<label for="exampleInputPassword1" class="form-label">SDM
-												Tersedia</label>
-											<input name="sdm_tersedia" required type="text" class="form-control"
-												id="exampleInputPassword1">
-										</div>
-										<div class="mb-3">
-											<label for="exampleInputPassword1" class="form-label">SDM
-												Terpenuhi</label>
-											<!-- <div class="mb-3" id="emailHelp" class="form-text"></div> -->
-											<input name="sdm_terpenuhi" required type="text" class="form-control"
-												id="exampleInputPassword1">
-										</div>
-										<div class="mb-3">
-											<label for="exampleInputEmail1" class="form-label">Jumlah Tenaga Kerja
-												yang dibutuhkan</label>
-											<input name="jml_tenaga_kerja" required type="text"
-												class="form-control mb-3" id="exampleInputEmail1"
-												aria-describedby="emailHelp">
-										</div>
-										<div class="mb-3">
-											<label for="exampleInputEmail1" class="form-label">Atasan
-												Langsung</label>
-											<input name="atasan_langsung" required type="text" class="form-control mb-3"
-												id="exampleInputEmail1" aria-describedby="emailHelp">
-										</div><br>
-
-										<label for="cars">Status &nbsp;&nbsp;&nbsp;:</label>
-
-										<select id="cars">
-											<option value="tetap">Permanent/tetap</option>
-											<option value="Kontrak">Kontrak</option>
-											<option value="Magang">Perserta Magang</option>
-
-										</select>
-
-										<br><br>
-
-										<label for="sifat">Sifat &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;:</label>
-										<select id="sifat">
-
-											<option value="penambahan">Additional/Penambahan</option>
-											<option value="penggantian">Replacing/Penggantian</option>
-										</select>
-										<br><br>
-										<div class="mb-2">
-											<label for="source">Source &nbsp;&nbsp;:</label>
-											<select name="source" id="">
-												<option value="internal">Internal</option>
-												<option value="eksternal">Eksternal</option>
-											</select>
-										</div>
-
-										<div class="mb-3" id="so">
-											<label for="beratbadan" class="form-label mb-3">berapa?</label>
-											<input name="internal" required type="text" class="form-control"
-												aria-describedby="emailHelp">
-										</div>
 
 
-									</div>
 
-									<div class="col-6">
-										<div class="mb-3 mt-2">
-
-											<label for="email" class="form-label">Tanggal Diperlukan</label>
-											<input name="tgl" required type="date" class="form-control" id="email"
-												aria-describedby="emailHelp">
-										</div>
+			<div class="card" style="overflow: scroll;">
+				<div class="card-header ">
+					<div class="card-title d-flex justify-content-between">Permintaan Tenaga Kerja
+						<div>
 
 
-										<div class="mb-3 mt-2">
-											<label for="diajukan" class="form-label">Diajukan Oleh</label>
-											<input name="diajukan_oleh" required type="text" class="form-control"
-												id="agama" aria-describedby="emailHelp">
-											<input name="diajukan_oleh" required type="datetime-local"
-												class="form-control" id="agama" aria-describedby="emailHelp">
-										</div>
-										<div class="mb-auto mt-2">
-
-											<label for="Disetujui" class="form-label">Disetujui oleh atasan
-												langsung</label>
-											<input name="disetujui_atasan_langsung" required type="text"
-												class="form-control" id="tinggibadan" aria-describedby="emailHelp">
-											<input name="disetujui_atasan_langsung" required type="datetime-local"
-												class="form-control" id="tinggibadan" aria-describedby="emailHelp">
-										</div>
-										<div class="mb-3 mt-2">
-											<label for="beratbadan" class="form-label">Disetujui oleh superior
-												atasan langsung</label>
-											<input name="disetujui_superioratasan" required type="text"
-												class="form-control" id="beratbadan" aria-describedby="emailHelp">
-											<input name="disetujui_superioratasan" required type="datetime-local"
-												class="form-control" id="beratbadan" aria-describedby="emailHelp">
-										</div>
-
-										<div class="mb-3 mt-2">
-
-											<label for="exampleInputEmail1" class="form-label">Diterima HR</label>
-											<input name="diterima_HR" required type="datetime-local"
-												class="form-control" id="exampleInputEmail1"
-												aria-describedby="emailHelp">
-										</div>
-										<div class="mb-3 mt-2">
-
-											<label for="exampleInputEmail1" class="form-label">Diiklankan</label>
-											<input name="diiklankan" required type="datetime-local" class="form-control"
-												id="exampleInputEmail1" aria-describedby="emailHelp">
-										</div>
-										<div class="mb-3 mt-2">
-
-											<label for="exampleInputEmail1" class="form-label">Tanggal
-												Terpenuhi</label>
-											<input name="tgl_terpenuhi" required type="datetime-local"
-												class="form-control" id="exampleInputEmail1"
-												aria-describedby="emailHelp">
-										</div>
-										<div class="mb-3 mt-2">
-
-											<label for="exampleInputEmail1" class="form-label">Status</label>
-											<input name="statuss" required type="email" class="form-control"
-												id="exampleInputEmail1" aria-describedby="emailHelp">
-										</div>
-
-									</div>
-									<button name="submit" type="submit" class="btn  btn-warning text-light"
-										style="width: 100% ;">Submit</button>
-
-								</div>
-								<div class="row mt-3" style="overflow-x: scroll;">
-									<div class="col-12-md">
-										<div class="card">
-											<div class="card-header">
-												<div class="card-title">Permintaan Tenaga Kerja </div>
-											</div>
-											<div class="card-body">
-												<!-- <div class="card-sub">
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+								data-bs-target="#myModal">
+								Tambah
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="card-body">
+					<!-- <div class="card-sub">
 													This is the basic table view of the ready dashboard :
 												</div> -->
-												<table class="table mt-3">
-													<thead>
-														<tr>
-															<th scope="col">ID</th>
-															<th scope="col">Permintaan Posisi</th>
-															<th scope="col">Standart Kebutuhan</th>
-															<th scope="col">SDM Tersedia</th>
-															<th scope="col">Jumlah Tenaga Kerja yang dibutuhkan</th>
-															<th scope="col">Atasan Langsung</th>
-															<th scope="col">Status </th>
-															<th scope="col">Sifat</th>
-															<th scope="col">Source Internal</th>
-															<th scope="col">Source Eksternal</th>
-															<th scope="col">Tanggal Diperlukan</th>
-															<th scope="col">Diajukan Oleh</th>
-															<th scope="col">Disetujui Oleh Atasan Langsung</th>
-															<th scope="col">Disetujui Oleh Superior Atasan Langsung</th>
-															<th scope="col">Diterima HR</th>
-															<th scope="col">Diiklankan</th>
-															<th scope="col">Tanggal Terpenuhi</th>
-															<th scope="col">Status</th>
+					<table class="table mt-3">
+						<thead>
+							<tr>
+								<th scope="col">ID</th>
+								<th scope="col">Permintaan Posisi</th>
+								<th scope="col">Standart Kebutuhan</th>
+								<th scope="col">SDM Tersedia</th>
+								<th scope="col">Jumlah Tenaga Kerja yang dibutuhkan</th>
+								<th scope="col">Atasan Langsung</th>
+								<th scope="col">Status </th>
+								<th scope="col">Sifat</th>
+								<th scope="col">Source Internal</th>
+								<th scope="col">Source Eksternal</th>
+								<th scope="col">Tanggal Diperlukan</th>
+								<th scope="col">Diajukan Oleh</th>
+								<th scope="col">Disetujui Oleh Atasan Langsung</th>
+								<th scope="col">Disetujui Oleh Superior Atasan Langsung</th>
+								<th scope="col">Diterima HR</th>
+								<th scope="col">Diiklankan</th>
+								<th scope="col">Tanggal Terpenuhi</th>
+								<th scope="col">Status</th>
 
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>1</td>
-															<td>Mark</td>
-															<td>Otto</td>
-															<td>@mdo</td>
-														</tr>
-														<tr>
-															<td>2</td>
-															<td>Jacob</td>
-															<td>Thornton</td>
-															<td>@fat</td>
-														</tr>
-														<tr>
-															<td>3</td>
-															<td>Larry the Bird</td>
-															<td>iya</td>
-															<td>@twitter</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Larry the Bird</td>
+								<td>iya</td>
+								<td>@twitter</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				</form>
 
 			</div>
 		</div>
+	</div>
+
+
+	</div>
+	</div>
 	</div>
 
 	<!--   Core JS Files   -->

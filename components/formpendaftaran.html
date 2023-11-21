@@ -6,7 +6,7 @@
 	<title>Atlantis Lite - Bootstrap 4 Admin Dashboard</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 	<link rel="icon" href="../assets/img/icon.ico" type="image/x-icon" />
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Fonts and icons -->
 	<script src="../assets/js/plugin/webfont/webfont.min.js"></script>
 	<script>
@@ -338,7 +338,7 @@
 					<ul class="nav nav-primary">
 						<li class="nav-item ">
 							<!-- class="collapsed" data-toggle="collapse"-->
-							<a href="../starter-template.html" aria-expanded="false">
+							<a href="../index.html" aria-expanded="false">
 								<i class="fas fa-home"></i>
 								<p>Dashboard</p>
 								<!-- <span class="caret"></span> -->
@@ -374,7 +374,7 @@
 										</a>
 									</li>
 									<li>
-										<a href="components/jobreqruitment.html">
+										<a href="jobreqruitment.html">
 											<span class="sub-item">Job Requirement</span>
 										</a>
 									</li>
@@ -425,7 +425,7 @@
 													<div class="collapse" id="subnav3">
 														<ul class="nav nav-collapse subnav">
 															<li>
-																<a href="psikotes.html">
+																<a href="#">
 																	<span class="sub-item">CFIT(Mengukur
 																		Intelegensi)</span>
 																</a>
@@ -1251,661 +1251,765 @@
 	<div class="main-panel">
 		<div class="content">
 			<div class="page-inner">
-				<section>
-					<div class="container">
-						<div class="card  md">
 
-							<div class="card-body border-top border-5 border-warning">
-								<h5 class="card-title text-center p-3">Form Pendaftaran Karyawan Baru PT Akui Bird Nest
-									Indonesia</h5>
-								<div class="container text-center fs-5">
-									<p class="card-text">Silakan memasukkan data diri Anda dengan sebenar-benarnya.
-										Baca dengan teliti dan isikan form pendaftaran ini dengan benar sesuai instruksi
-										pada masing-masing pertanyaan.
-										Seluruh proses rekrutmen yang diadakan oleh perusahaan tidak dipungut biaya
-										apapun.
-									</p>
-								</div>
+				<div class="container mt-3">
+
+
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+						Tambah
+					</button>
+				</div>
+
+				<!-- The Modal -->
+				<div class="modal" id="myModal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<h4 class="modal-title">Pendaftaran Karyawan Baru</h4>
+								<button type="button" class="btn btn-close" data-bs-dismiss="modal">&#x2716;</button>
 							</div>
 
+							<!-- Modal body -->
+							<div class="modal-body">
 
-							<form action="" method="post">
+								<div class="container">
+									<div class="card  md">
 
-								<div class="card m-3  md">
-									<div class="card-body border-top border-5 border-warning">
-										<h5 class="card-title text-center"></h5>
-										<div class="row">
-											<div class="col-6">
-												<div class="mb-3">
-													<label for="formFile" class="form-label fs">
-														<p>Foto KTP
-														</p>
-													</label>
-													<input name="scan_ktp" accept="application/jpeg" multiple
-														class="form-control" required type="file" id="formFile">
-												</div>
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Nama lengkap
-														sesuai
-														KTP</label>
-													<input name="nama" required type="text" class="form-control"
-														id="exampleInputEmail1" aria-describedby="emailHelp">
-
-												</div>
-
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">NIK KTP</label>
-													<input name="nik_ktp" required type="text" class="form-control"
-														id="exampleInputEmail1" aria-describedby="emailHelp">
-
-												</div>
-
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Tempat
-														lahir</label>
-													<input name="tempatlahir" required type="text" class="form-control"
-														id="exampleInputEmail1" aria-describedby="emailHelp">
-
-												</div>
-												<div class="mb-3">
-													<label for="exampleInputPassword1" class="form-label">Tanggal
-														lahir</label>
-													<input name="tanggallahir" required type="date" class="form-control"
-														id="exampleInputPassword1">
-												</div>
-												<div class="mb-3">
-													<label for="exampleInputPassword1" class="form-label">Usia</label>
-													<div class="mb-3" id="emailHelp" class="form-text">Contoh pengisian:
-														25
-														Th</div>
-													<input name="usia" required type="text" class="form-control"
-														id="exampleInputPassword1">
-												</div>
-												<div class="container mb-3"></div>
-												<p> Jenis kelamin</p>
-												<div class="form-check">
-													<input value="laki laki" name="jeniskelamin" required
-														class="form-check-input" type="radio" id="jk">
-													<label class="form-check-label" for="jk">
-														laki laki
-													</label>
-												</div>
-												<div class="form-check">
-													<input value="Perempuan" class="form-check-input" type="radio"
-														name="jeniskelamin" id="jk">
-													<label class="form-check-label mb-3" for="jk">
-														Perempuan
-													</label>
-												</div>
-
-
-												<div class="mb-3 mt-2">
-
-													<label for="exampleInputEmail1" class="form-label">Email
-														Aktif</label>
-													<input name="email" required type="email" class="form-control"
-														id="exampleInputEmail1" aria-describedby="emailHelp">
-												</div>
-
-												<div class="mb-2">pendidikan terakhir</div>
-												<div class="form-check">
-													<input value="smp" name="pendidikan_terakhir" required
-														class="form-check-input" type="radio" id="flexRadioDefault1">
-													<label class="form-check-label" for="flexRadioDefault1">
-														SMP Sederajat
-													</label>
-												</div>
-												<div class="form-check">
-													<input value="sma" class="form-check-input" type="radio"
-														name="pendidikan_terakhir" id="flexRadioDefault1">
-													<label class="form-check-label" for="flexRadioDefault1">
-														SMA
-													</label>
-
-												</div>
-												<div class="form-check">
-													<input value="SMK" class="form-check-input" type="radio"
-														name="pendidikan_terakhir" id="flexRadioDefault1">
-													<label class="form-check-label" for="flexRadioDefault1">
-														SMK
-													</label>
-												</div>
-												<div class="form-check">
-													<input value="MA" class="form-check-input" type="radio"
-														name="pendidikan_terakhir" id="flexRadioDefault1">
-													<label class="form-check-label" for="flexRadioDefault1">
-														MA
-													</label>
-												</div>
-												<div class="form-check">
-													<input value="D1" class="form-check-input" type="radio"
-														name="pendidikan_terakhir" id="flexRadioDefault1">
-													<label class="form-check-label" for="flexRadioDefault1">
-														D1
-													</label>
-												</div>
-												<div class="form-check">
-													<input value="D2" class="form-check-input" type="radio"
-														name="pendidikan_terakhir" id="flexRadioDefault1">
-													<label class="form-check-label" for="flexRadioDefault1">
-														D2
-													</label>
-												</div>
-												<div class="form-check">
-													<input value="D3" class="form-check-input" type="radio"
-														name="pendidikan_terakhir" id="flexRadioDefault1">
-													<label class="form-check-label" for="flexRadioDefault1">
-														D3
-													</label>
-												</div>
-												<div class="form-check">
-													<input value="D4" class="form-check-input" type="radio"
-														name="pendidikan_terakhir" id="flexRadioDefault1">
-													<label class="form-check-label" for="flexRadioDefault1">
-														D4
-													</label>
-												</div>
-												<div class="form-check">
-													<input value="S1" class="form-check-input" type="radio"
-														name="pendidikan_terakhir" id="flexRadioDefault1">
-													<label class="form-check-label" for="flexRadioDefault1">
-														S1
-													</label>
-												</div>
-												<div class="form-check">
-													<input value="S2" class="form-check-input" type="radio"
-														name="pendidikan_terakhir" id="flexRadioDefault1">
-													<label class="form-check-label mb-3" for="flexRadioDefault1">
-														S2
-													</label>
-												</div>
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Tuliskan Nama
-														Sekolah/Universitas Terakhir Anda</label>
-													<div class="mb-3" id="emailHelp" class="form-text">Contoh: SMA
-														Negeri 1
-														Jombang atau S1 Psikologi Universitas Muhammadiyah Malang</div>
-													<input name="nama_sekolah" required type="text" class="form-control"
-														id="exampleInputEmail1" aria-describedby="emailHelp">
-												</div>
-												<div class="mb-2">Status pernikahan</div>
-												<div class="form-check">
-													<input value="belum menikah" name="status_pernikahan"
-														class="form-check-input" type="radio" id="sp">
-													<label class="form-check-label" for="sp">
-														Belum menikah
-													</label>
-												</div>
-												<div class="form-check">
-													<input value="menikah" class="form-check-input" type="radio"
-														name="status_pernikahan" id="sp">
-													<label class="form-check-label" for="sp">
-														Menikah
-													</label>
-
-												</div>
-												<div class="form-check">
-													<input value="cerai hidup" required class="form-check-input"
-														type="radio" name="status_pernikahan" id="sp">
-													<label class="form-check-label" for="sp">
-														Cerai hidup
-													</label>
-												</div>
-												<div class="form-check mb-3">
-													<input value="cerai mati" class="form-check-input" type="radio"
-														name="status_pernikahan" id="sp">
-													<label class="form-check-label" for="sp">
-														Cerai mati
-													</label>
-												</div>
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Alamat sesuai
-														KTP</label>
-													<div class="mb-3" id="emailHelp" class="form-text">Hanya pelamar
-														yang
-														menuliskan alamat lengkap sesuai KTP, yang akan kami proses
-														lebih
-														lanjut. <br>
-														Contoh : Jl. Singojoyo RT/RW 04/02 Ds. Tembelang Kec. Tembelang
-														Kab.
-														Jombang </div><input name="alamat" required type="text"
-														class="form-control mb-3" id="exampleInputEmail1"
-														aria-describedby="emailHelp">
-												</div>
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Alamat domisili
-														saat ini</label>
-													<div class="mb-3" id="emailHelp" class="form-text">Jika alamat
-														domisili sama dengan KTP, tidak perlu ditulis ulang melainkan
-														isi dengan tanda - </div>
-													<input nama="domisili" required type="text"
-														class="form-control mb-3" id="exampleInputEmail1"
-														aria-describedby="emailHelp">
-												</div>
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Nomor
-														Telepon</label>
-													<div class="mb-3" id="emailHelp" class="form-text">Yang
-														terhubung dengn whatsapp <br> Awali dengan angka 0 dan tanpa
-														tanda -
-													</div><input name="nomor_telpon" required type="text"
-														class="form-control mb-3" id="exampleInputEmail1"
-														aria-describedby="emailHelp">
-												</div>
-												<div class="mb-2">
-													<div class="text">Posisi yang dilamar
-													</div>
-													<div class="form-check">
-														<input value="operator produksi" name="posisi_ygdilamar"
-															class="form-check-input" required type="radio" id="pd1">
-														<label class="form-check-label" for="pd1">
-															Operator produksi
-														</label>
-													</div>
-													<div class="form-check">
-														<input value="security" class="form-check-input" type="radio"
-															name="posisi_ygdilamar" id="pd1">
-														<label class="form-check-label" for="pd1">
-															Security
-														</label>
-													</div>
-													<div class="form-check">
-														<input value="Continuous Improvement" class="form-check-input"
-															type="radio" name="posisi_ygdilamar" id="pd1">
-														<label class="form-check-label" for="pd1">
-															Continuous Improvement
-														</label>
-													</div>
-													<div class="form-check">
-														<input value="IT Programmer Intership Program"
-															class="form-check-input" type="radio"
-															name="posisi_ygdilamar" id="pd1">
-														<label class="form-check-label" for="pd1">
-															Programmer Intership Program
-														</label>
-													</div>
-													<div class="form-check">
-														<input value="juru masak" class="form-check-input" type="radio"
-															name="posisi_ygdilamar" id="pd1">
-														<label class="form-check-label" for="pd1">
-															Juru Masak
-														</label>
-													</div>
-												</div>
-											</div>
-
-
-
-											<div class="col-6">
-
-
-
-
-
-
-
-
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">
-														<p class="mt-4">Pengalaman Bekerja</p>
-													</label>
-													<div class="mb-3" id="emailHelp" class="form-text">Contoh:
-														PT Akui Bird Nest Indonesia sebagai Operator Produksi (1
-														tahun 2 bulan) </div>
-													<input name="pengalaman_bekerja" required type="text"
-														class="form-control mb-3" id="exampleInputEmail1"
-														aria-describedby="emailHelp">
-
-													<div class="mb-2">
-														Apakah anda memiliki mata minus / silinder
-													</div>
-													<div class="form-check">
-														<input value="YES" name="minus_silinder"
-															class="form-check-input" type="radio" id="m/s"
-															onclick="text(0)">
-														<label class="form-check-label" for="m/s">
-															Yes
-														</label>
-													</div>
-													<div class="form-check">
-														<input value="-" class="form-check-input" type="radio"
-															name="minus_silinder" id="m/s" onclick="text(1)">
-														<label class="form-check-label" for="m/s">
-															No
-														</label>
-														<div class="mb-3 mt-2" id="minus_silinder">
-															<label for="beratbadan" class="form-label">minus
-																berapa?</label>
-															<input name="minus_silinder" required type="text"
-																class="form-control" aria-describedby="emailHelp">
-															<label for="beratbadan" class="form-label">silinder
-																berapa?</label>
-															<input name="minus_silinder" required type="text"
-																class="form-control" aria-describedby="emailHelp">
-														</div>
-													</div>
-
-													<div class="mb-3">
-														Apakah anda memiliki riwayat penyakit?
-													</div>
-													<div class="form-check">
-														<input value="YES" name="penyakit" class="form-check-input"
-															type="radio" id="p" onclick="t(0)">
-														<label class="form-check-label" for="p">
-															Yes
-														</label>
-													</div>
-													<div class="form-check">
-														<input value="-" class="form-check-input" type="radio"
-															name="penyakit" id="p" onclick="t(1)">
-														<label class="form-check-label" for="p">
-															No
-														</label>
-														<div class="mb-3 mt-2" id="penyakit">
-															<label for="beratbadan" class="form-label">Penyakit
-																apa?</label>
-															<input name="penyakit" required type="text"
-																class="form-control" aria-describedby="emailHelp">
-															<label for="beratbadan" class="form-label">Kapan?</label>
-															<input name="penyakit" required type="text"
-																class="form-control" aria-describedby="emailHelp">
-														</div>
-													</div>
-
-													<div class="mb-2">
-														Apakah anda pernah mengikuti proses seleksi di PT AKUI
-														GROUP(PT. Akui Bird Nest Indonesia, PT. Original Berkah
-														Indonesia,
-														PT. Wallet Abdillah Jabli)
-													</div>
-													<div class="form-check">
-														<input value="YES" name="seleksi" class="form-check-input"
-															type="radio" id="s" onclick="e(0)">
-														<label class="form-check-label" for="s">
-															Yes
-														</label>
-													</div>
-													<div class="form-check">
-														<input value="-" class="form-check-input" type="radio"
-															name="seleksi" id="s" onclick="e(1)">
-														<label class="form-check-label" for="s">
-															No
-														</label>
-														<div class="mb-3 mt-2" id="seleksi">
-															<label for="beratbadan" class="form-label">Kapan?</label>
-															<input name="seleksi" required type="text"
-																class="form-control" aria-describedby="emailHelp">
-														</div>
-													</div>
-
-													<div class="mb-2">
-														Apakah anda pernah bekerja di PT AKUI GROUP(PT. Akui
-														Bird Nest Indonesia, PT. Original Berkah Indonesia,
-														PT. Wallet Abdillah Jabli)?
-													</div>
-													<div class="form-check">
-														<input value="YES" name="bekerja" class="form-check-input"
-															type="radio" id="b" onclick="x(0)">
-														<label class="form-check-label" for="b">
-															Yes
-														</label>
-													</div>
-													<div class="form-check">
-														<input value="-" class="form-check-input" type="radio"
-															name="bekerja" id="b" onclick="x(1)">
-														<label class="form-check-label" for="b">
-															No
-														</label>
-														<div class="mb-3 mt-2" id="bekerja">
-															<label for="beratbadan" class="form-label">Kapan
-																Anda Resign?</label>
-															<input name="bekerja" required type="text"
-																class="form-control" aria-describedby="emailHelp">
-															<label for="beratbadan" class="form-label">Kenapa
-																Anda Resign?</label>
-															<input name="bekerja" required type="text"
-																class="form-control" aria-describedby="emailHelp">
-														</div>
-													</div>
-
-													<div class="mb-2">
-														Apakah anda sedang mengikuti proses kuliah?
-													</div>
-													<div class="form-check">
-														<input value="YES" name="kuliah" class="form-check-input"
-															type="radio" id="k" onclick="xt(0)">
-														<label class="form-check-label" for="k">
-															Yes
-														</label>
-													</div>
-													<div class="form-check">
-														<input value="-" class="form-check-input" type="radio"
-															name="kuliah" id="k" onclick="xt(1)">
-														<label class="form-check-label" for="k">
-															No
-														</label>
-														<div class="mb-3 mt-2" id="kuliah">
-															<label for="beratbadan" class="form-label">kelas
-																yang anda ikuti reguler/karyawan?</label>
-															<input name="kuliah" required type="text"
-																class="form-control" aria-describedby="emailHelp">
-														</div>
-													</div>
-
-													<div class="mb-2">
-														Apakah anda mempunyai keluarga atau kawan yang bekerja
-														dalam group perusahaan kami?
-													</div>
-													<div class="form-check">
-														<input value="YES" name="relasi" class="form-check-input"
-															type="radio" id="r" onclick="te(0)">
-														<label class="form-check-label" for="r">
-															Yes
-														</label>
-													</div>
-													<div class="form-check">
-														<input value="-" class="form-check-input" type="radio"
-															name="relasi" id="r" onclick="te(1)">
-														<label class="form-check-label" for="r">
-															No
-														</label>
-														<div class="mb-3 mt-2" id="relasi">
-															<label for="beratbadan" class="form-label">Nama</label>
-															<input name="relasi" required type="text"
-																class="form-control" aria-describedby="emailHelp">
-															<label for="beratbadan"
-																class="form-label">Jabatannya</label>
-															<input name="relasi" required type="text"
-																class="form-control" aria-describedby="emailHelp">
-														</div>
-													</div>
-												</div>
-
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">
-														<p class="mt-4">Berikan penjelasan singkat kenapa anda
-															tertarik di perushaan ini?</p>
-													</label>
-													<input name="penjelasan" required type="text"
-														class="form-control mb-3" id="exampleInputEmail1"
-														aria-describedby="emailHelp">
-												</div>
-
-
-												<div class="mb-3">
-													<label for="formFile" class="form-label fs">
-														<p>Upload Berkas Lamaran
-														</p>
-														Berkas Lamaran Berisi: <br>
-														1. KTP ASLI <br>
-														2. KARTU KELUARGA <br>
-														3. Pass Foto <br>
-														4. LAMARAN LENGKAP (Surat Lamaran, CV/Daftar Riwayat
-														Hidup, Ijazah, SKHU/Transkip Nilai, Keterangan
-														Vaksin Terakhir, Surat Sehat Asli) <br>
-														<br>
-														-Jadikan dalam satu file PDF dengan ukuran file max
-														10 MB dan diberi nama : Berkas Lamaran (spasi) Nama
-														Lengkap (spasi) Posisi yang dilamar <br>
-														-Berkas lamaran yang diupload harus jelas dan bisa
-														terbaca untuk dapat kami proses lebih lanjut.
-													</label>
-													<input name="fileberkas" accept="application/pdf" multiple
-														class="form-control" required type="file" id="formFile">
-												</div>
-
-
-												<button name="submit" type="submit"
-													class="btn  btn-warning text-light">Submit</button>
-
-
-
-
+										<div class="card-body border-top border-5 border-warning">
+											<h5 class="card-title text-center p-3">Form Pendaftaran Karyawan Baru PT
+												Akui Bird Nest
+												Indonesia</h5>
+											<div class="container text-center fs-5">
+												<p class="card-text">Silakan memasukkan data diri Anda dengan
+													sebenar-benarnya.
+													Baca dengan teliti dan isikan form pendaftaran ini dengan benar
+													sesuai instruksi
+													pada masing-masing pertanyaan.
+													Seluruh proses rekrutmen yang diadakan oleh perusahaan tidak
+													dipungut biaya
+													apapun.
+												</p>
 											</div>
 										</div>
 
 
-							</form>
+										<form action="" method="post">
+
+											<div class="card m-3  md">
+												<div class="card-body border-top border-5 border-warning">
+													<h5 class="card-title text-center"></h5>
+													<div class="row">
+														<div class="col-6">
+															<div class="mb-3">
+																<label for="formFile" class="form-label fs">
+																	<p>Foto KTP
+																	</p>
+																</label>
+																<input name="scan_ktp" accept="application/jpeg"
+																	multiple class="form-control" required type="file"
+																	id="formFile">
+															</div>
+															<div class="mb-3">
+																<label for="exampleInputEmail1" class="form-label">Nama
+																	lengkap
+																	sesuai
+																	KTP</label>
+																<input name="nama" required type="text"
+																	class="form-control" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+
+															</div>
+
+															<div class="mb-3">
+																<label for="exampleInputEmail1" class="form-label">NIK
+																	KTP</label>
+																<input name="nik_ktp" required type="text"
+																	class="form-control" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+
+															</div>
+
+															<div class="mb-3">
+																<label for="exampleInputEmail1"
+																	class="form-label">Tempat
+																	lahir</label>
+																<input name="tempatlahir" required type="text"
+																	class="form-control" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+
+															</div>
+															<div class="mb-3">
+																<label for="exampleInputPassword1"
+																	class="form-label">Tanggal
+																	lahir</label>
+																<input name="tanggallahir" required type="date"
+																	class="form-control" id="exampleInputPassword1">
+															</div>
+															<div class="mb-3">
+																<label for="exampleInputPassword1"
+																	class="form-label">Usia</label>
+																<div class="mb-3" id="emailHelp" class="form-text">
+																	Contoh pengisian:
+																	25
+																	Th</div>
+																<input name="usia" required type="text"
+																	class="form-control" id="exampleInputPassword1">
+															</div>
+															<div class="container mb-3"></div>
+															<p> Jenis kelamin</p>
+															<div class="form-check">
+																<input value="laki laki" name="jeniskelamin" required
+																	class="form-check-input" type="radio" id="jk">
+																<label class="form-check-label" for="jk">
+																	laki laki
+																</label>
+															</div>
+															<div class="form-check">
+																<input value="Perempuan" class="form-check-input"
+																	type="radio" name="jeniskelamin" id="jk">
+																<label class="form-check-label mb-3" for="jk">
+																	Perempuan
+																</label>
+															</div>
+
+
+															<div class="mb-3 mt-2">
+
+																<label for="exampleInputEmail1" class="form-label">Email
+																	Aktif</label>
+																<input name="email" required type="email"
+																	class="form-control" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+
+															<div class="mb-2">pendidikan terakhir</div>
+															<div class="form-check">
+																<input value="smp" name="pendidikan_terakhir" required
+																	class="form-check-input" type="radio"
+																	id="flexRadioDefault1">
+																<label class="form-check-label" for="flexRadioDefault1">
+																	SMP Sederajat
+																</label>
+															</div>
+															<div class="form-check">
+																<input value="sma" class="form-check-input" type="radio"
+																	name="pendidikan_terakhir" id="flexRadioDefault1">
+																<label class="form-check-label" for="flexRadioDefault1">
+																	SMA
+																</label>
+
+															</div>
+															<div class="form-check">
+																<input value="SMK" class="form-check-input" type="radio"
+																	name="pendidikan_terakhir" id="flexRadioDefault1">
+																<label class="form-check-label" for="flexRadioDefault1">
+																	SMK
+																</label>
+															</div>
+															<div class="form-check">
+																<input value="MA" class="form-check-input" type="radio"
+																	name="pendidikan_terakhir" id="flexRadioDefault1">
+																<label class="form-check-label" for="flexRadioDefault1">
+																	MA
+																</label>
+															</div>
+															<div class="form-check">
+																<input value="D1" class="form-check-input" type="radio"
+																	name="pendidikan_terakhir" id="flexRadioDefault1">
+																<label class="form-check-label" for="flexRadioDefault1">
+																	D1
+																</label>
+															</div>
+															<div class="form-check">
+																<input value="D2" class="form-check-input" type="radio"
+																	name="pendidikan_terakhir" id="flexRadioDefault1">
+																<label class="form-check-label" for="flexRadioDefault1">
+																	D2
+																</label>
+															</div>
+															<div class="form-check">
+																<input value="D3" class="form-check-input" type="radio"
+																	name="pendidikan_terakhir" id="flexRadioDefault1">
+																<label class="form-check-label" for="flexRadioDefault1">
+																	D3
+																</label>
+															</div>
+															<div class="form-check">
+																<input value="D4" class="form-check-input" type="radio"
+																	name="pendidikan_terakhir" id="flexRadioDefault1">
+																<label class="form-check-label" for="flexRadioDefault1">
+																	D4
+																</label>
+															</div>
+															<div class="form-check">
+																<input value="S1" class="form-check-input" type="radio"
+																	name="pendidikan_terakhir" id="flexRadioDefault1">
+																<label class="form-check-label" for="flexRadioDefault1">
+																	S1
+																</label>
+															</div>
+															<div class="form-check">
+																<input value="S2" class="form-check-input" type="radio"
+																	name="pendidikan_terakhir" id="flexRadioDefault1">
+																<label class="form-check-label mb-3"
+																	for="flexRadioDefault1">
+																	S2
+																</label>
+															</div>
+															<div class="mb-3">
+																<label for="exampleInputEmail1"
+																	class="form-label">Tuliskan Nama
+																	Sekolah/Universitas Terakhir Anda</label>
+																<div class="mb-3" id="emailHelp" class="form-text">
+																	Contoh: SMA
+																	Negeri 1
+																	Jombang atau S1 Psikologi Universitas Muhammadiyah
+																	Malang</div>
+																<input name="nama_sekolah" required type="text"
+																	class="form-control" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+															<div class="mb-2">Status pernikahan</div>
+															<div class="form-check">
+																<input value="belum menikah" name="status_pernikahan"
+																	class="form-check-input" type="radio" id="sp">
+																<label class="form-check-label" for="sp">
+																	Belum menikah
+																</label>
+															</div>
+															<div class="form-check">
+																<input value="menikah" class="form-check-input"
+																	type="radio" name="status_pernikahan" id="sp">
+																<label class="form-check-label" for="sp">
+																	Menikah
+																</label>
+
+															</div>
+															<div class="form-check">
+																<input value="cerai hidup" required
+																	class="form-check-input" type="radio"
+																	name="status_pernikahan" id="sp">
+																<label class="form-check-label" for="sp">
+																	Cerai hidup
+																</label>
+															</div>
+															<div class="form-check mb-3">
+																<input value="cerai mati" class="form-check-input"
+																	type="radio" name="status_pernikahan" id="sp">
+																<label class="form-check-label" for="sp">
+																	Cerai mati
+																</label>
+															</div>
+															<div class="mb-3">
+																<label for="exampleInputEmail1"
+																	class="form-label">Alamat sesuai
+																	KTP</label>
+																<div class="mb-3" id="emailHelp" class="form-text">Hanya
+																	pelamar
+																	yang
+																	menuliskan alamat lengkap sesuai KTP, yang akan kami
+																	proses
+																	lebih
+																	lanjut. <br>
+																	Contoh : Jl. Singojoyo RT/RW 04/02 Ds. Tembelang
+																	Kec. Tembelang
+																	Kab.
+																	Jombang </div><input name="alamat" required
+																	type="text" class="form-control mb-3"
+																	id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+															<div class="mb-3">
+																<label for="exampleInputEmail1"
+																	class="form-label">Alamat domisili
+																	saat ini</label>
+																<div class="mb-3" id="emailHelp" class="form-text">Jika
+																	alamat
+																	domisili sama dengan KTP, tidak perlu ditulis ulang
+																	melainkan
+																	isi dengan tanda - </div>
+																<input nama="domisili" required type="text"
+																	class="form-control mb-3" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+															<div class="mb-3">
+																<label for="exampleInputEmail1" class="form-label">Nomor
+																	Telepon</label>
+																<div class="mb-3" id="emailHelp" class="form-text">Yang
+																	terhubung dengn whatsapp <br> Awali dengan angka 0
+																	dan tanpa
+																	tanda -
+																</div><input name="nomor_telpon" required type="text"
+																	class="form-control mb-3" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+															<div class="mb-2">
+																<div class="text">Posisi yang dilamar
+																</div>
+																<div class="form-check">
+																	<input value="operator produksi"
+																		name="posisi_ygdilamar" class="form-check-input"
+																		required type="radio" id="pd1">
+																	<label class="form-check-label" for="pd1">
+																		Operator produksi
+																	</label>
+																</div>
+																<div class="form-check">
+																	<input value="security" class="form-check-input"
+																		type="radio" name="posisi_ygdilamar" id="pd1">
+																	<label class="form-check-label" for="pd1">
+																		Security
+																	</label>
+																</div>
+																<div class="form-check">
+																	<input value="Continuous Improvement"
+																		class="form-check-input" type="radio"
+																		name="posisi_ygdilamar" id="pd1">
+																	<label class="form-check-label" for="pd1">
+																		Continuous Improvement
+																	</label>
+																</div>
+																<div class="form-check">
+																	<input value="IT Programmer Intership Program"
+																		class="form-check-input" type="radio"
+																		name="posisi_ygdilamar" id="pd1">
+																	<label class="form-check-label" for="pd1">
+																		Programmer <br> Intership Program
+																	</label>
+																</div>
+																<div class="form-check">
+																	<input value="juru masak" class="form-check-input"
+																		type="radio" name="posisi_ygdilamar" id="pd1">
+																	<label class="form-check-label" for="pd1">
+																		Juru Masak
+																	</label>
+																</div>
+															</div>
+														</div>
+
+
+
+														<div class="col-6">
+
+
+
+
+
+
+
+
+															<div class="mb-3">
+																<label for="exampleInputEmail1" class="form-label">
+																	<p class="mt-4">Pengalaman Bekerja</p>
+																</label>
+																<div class="mb-3" id="emailHelp" class="form-text">
+																	Contoh:
+																	PT Akui Bird Nest Indonesia sebagai Operator
+																	Produksi (1
+																	tahun 2 bulan) </div>
+																<input name="pengalaman_bekerja" required type="text"
+																	class="form-control mb-3" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+
+																<div class="mb-2">
+																	Apakah anda memiliki mata minus / silinder
+																</div>
+																<div class="form-check">
+																	<input value="YES" name="minus_silinder"
+																		class="form-check-input" type="radio" id="m/s"
+																		onclick="text(0)">
+																	<label class="form-check-label" for="m/s">
+																		Yes
+																	</label>
+																</div>
+																<div class="form-check">
+																	<input value="-" class="form-check-input"
+																		type="radio" name="minus_silinder" id="m/s"
+																		onclick="text(1)">
+																	<label class="form-check-label" for="m/s">
+																		No
+																	</label>
+																	<div class="mb-3 mt-2" id="minus_silinder">
+																		<label for="beratbadan" class="form-label">minus
+																			berapa?</label>
+																		<input name="minus_silinder" required
+																			type="text" class="form-control"
+																			aria-describedby="emailHelp">
+																		<label for="beratbadan"
+																			class="form-label">silinder
+																			berapa?</label>
+																		<input name="minus_silinder" required
+																			type="text" class="form-control"
+																			aria-describedby="emailHelp">
+																	</div>
+																</div>
+
+																<div class="mb-3">
+																	Apakah anda memiliki riwayat penyakit?
+																</div>
+																<div class="form-check">
+																	<input value="YES" name="penyakit"
+																		class="form-check-input" type="radio" id="p"
+																		onclick="t(0)">
+																	<label class="form-check-label" for="p">
+																		Yes
+																	</label>
+																</div>
+																<div class="form-check">
+																	<input value="-" class="form-check-input"
+																		type="radio" name="penyakit" id="p"
+																		onclick="t(1)">
+																	<label class="form-check-label" for="p">
+																		No
+																	</label>
+																	<div class="mb-3 mt-2" id="penyakit">
+																		<label for="beratbadan"
+																			class="form-label">Penyakit
+																			apa?</label>
+																		<input name="penyakit" required type="text"
+																			class="form-control"
+																			aria-describedby="emailHelp">
+																		<label for="beratbadan"
+																			class="form-label">Kapan?</label>
+																		<input name="penyakit" required type="text"
+																			class="form-control"
+																			aria-describedby="emailHelp">
+																	</div>
+																</div>
+
+																<div class="mb-2">
+																	Apakah anda pernah mengikuti proses seleksi di PT
+																	AKUI
+																	GROUP(PT. Akui Bird Nest Indonesia, PT. Original
+																	Berkah
+																	Indonesia,
+																	PT. Wallet Abdillah Jabli)
+																</div>
+																<div class="form-check">
+																	<input value="YES" name="seleksi"
+																		class="form-check-input" type="radio" id="s"
+																		onclick="e(0)">
+																	<label class="form-check-label" for="s">
+																		Yes
+																	</label>
+																</div>
+																<div class="form-check">
+																	<input value="-" class="form-check-input"
+																		type="radio" name="seleksi" id="s"
+																		onclick="e(1)">
+																	<label class="form-check-label" for="s">
+																		No
+																	</label>
+																	<div class="mb-3 mt-2" id="seleksi">
+																		<label for="beratbadan"
+																			class="form-label">Kapan?</label>
+																		<input name="seleksi" required type="text"
+																			class="form-control"
+																			aria-describedby="emailHelp">
+																	</div>
+																</div>
+
+																<div class="mb-2">
+																	Apakah anda pernah bekerja di PT AKUI GROUP(PT. Akui
+																	Bird Nest Indonesia, PT. Original Berkah Indonesia,
+																	PT. Wallet Abdillah Jabli)?
+																</div>
+																<div class="form-check">
+																	<input value="YES" name="bekerja"
+																		class="form-check-input" type="radio" id="b"
+																		onclick="x(0)">
+																	<label class="form-check-label" for="b">
+																		Yes
+																	</label>
+																</div>
+																<div class="form-check">
+																	<input value="-" class="form-check-input"
+																		type="radio" name="bekerja" id="b"
+																		onclick="x(1)">
+																	<label class="form-check-label" for="b">
+																		No
+																	</label>
+																	<div class="mb-3 mt-2" id="bekerja">
+																		<label for="beratbadan" class="form-label">Kapan
+																			Anda Resign?</label>
+																		<input name="bekerja" required type="text"
+																			class="form-control"
+																			aria-describedby="emailHelp">
+																		<label for="beratbadan"
+																			class="form-label">Kenapa
+																			Anda Resign?</label>
+																		<input name="bekerja" required type="text"
+																			class="form-control"
+																			aria-describedby="emailHelp">
+																	</div>
+																</div>
+
+																<div class="mb-2">
+																	Apakah anda sedang mengikuti proses kuliah?
+																</div>
+																<div class="form-check">
+																	<input value="YES" name="kuliah"
+																		class="form-check-input" type="radio" id="k"
+																		onclick="xt(0)">
+																	<label class="form-check-label" for="k">
+																		Yes
+																	</label>
+																</div>
+																<div class="form-check">
+																	<input value="-" class="form-check-input"
+																		type="radio" name="kuliah" id="k"
+																		onclick="xt(1)">
+																	<label class="form-check-label" for="k">
+																		No
+																	</label>
+																	<div class="mb-3 mt-2" id="kuliah">
+																		<label for="beratbadan" class="form-label">kelas
+																			yang anda ikuti <br>
+																			reguler/karyawan?</label>
+																		<input name="kuliah" required type="text"
+																			class="form-control"
+																			aria-describedby="emailHelp">
+																	</div>
+																</div>
+
+																<div class="mb-2">
+																	Apakah anda mempunyai keluarga atau kawan yang
+																	bekerja
+																	dalam group perusahaan kami?
+																</div>
+																<div class="form-check">
+																	<input value="YES" name="relasi"
+																		class="form-check-input" type="radio" id="r"
+																		onclick="te(0)">
+																	<label class="form-check-label" for="r">
+																		Yes
+																	</label>
+																</div>
+																<div class="form-check">
+																	<input value="-" class="form-check-input"
+																		type="radio" name="relasi" id="r"
+																		onclick="te(1)">
+																	<label class="form-check-label" for="r">
+																		No
+																	</label>
+																	<div class="mb-3 mt-2" id="relasi">
+																		<label for="beratbadan"
+																			class="form-label">Nama</label>
+																		<input name="relasi" required type="text"
+																			class="form-control"
+																			aria-describedby="emailHelp">
+																		<label for="beratbadan"
+																			class="form-label">Jabatannya</label>
+																		<input name="relasi" required type="text"
+																			class="form-control"
+																			aria-describedby="emailHelp">
+																	</div>
+																</div>
+															</div>
+
+															<div class="mb-3">
+																<label for="exampleInputEmail1" class="form-label">
+																	<p class="mt-4">Berikan penjelasan singkat kenapa
+																		anda
+																		tertarik di perushaan ini?</p>
+																</label>
+																<input name="penjelasan" required type="text"
+																	class="form-control mb-3" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+
+
+															<div class="mb-3">
+																<label for="formFile" class="form-label fs">
+																	<p>Upload Berkas Lamaran
+																	</p>
+																	Berkas Lamaran Berisi: <br>
+																	1. KTP ASLI <br>
+																	2. KARTU KELUARGA <br>
+																	3. Pass Foto <br>
+																	4. LAMARAN LENGKAP (Surat Lamaran, CV/Daftar Riwayat
+																	Hidup, Ijazah, SKHU/Transkip Nilai, Keterangan
+																	Vaksin Terakhir, Surat Sehat Asli) <br>
+																	<br>
+																	-Jadikan dalam satu file PDF dengan ukuran file max
+																	10 MB dan diberi nama : Berkas Lamaran (spasi) Nama
+																	Lengkap (spasi) Posisi yang dilamar <br>
+																	-Berkas lamaran yang diupload harus jelas dan bisa
+																	terbaca untuk dapat kami proses lebih lanjut.
+																</label>
+																<input name="fileberkas" accept="application/pdf"
+																	multiple class="form-control" required type="file"
+																	id="formFile">
+															</div>
+
+
+															<button name="submit" type="submit"
+																class="btn  btn-warning text-light"
+																style="width: 100%;">Submit</button>
+
+
+
+
+														</div>
+													</div>
+
+
+										</form>
+									</div>
+									<!-- Modal footer -->
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger"
+											data-bs-dismiss="modal">Close</button>
+									</div>
+
+								</div>
+							</div>
 						</div>
-				</section>
-			</div>
-
-			<div class="card" style="overflow-x: scroll;">
-				<div class="card-header">
-					<div class="card-title">Hoverable Table</div>
-				</div>
-				<div class="card-body">
-					<style>
-						th {
-							padding: 0;
-						}
-					</style>
-					<table class="table table-bordered table-hover text-light ">
-						<thead>
-							<tr>
-								<th scope="col">NO</th>
-								<th scope="col">Foto KTP</th>
-								<th scope="col">Nama lengkap sesuai KTP</th>
-								<th scope="col">NIK KTP</th>
-								<th>Tempat lahir</th>
-								<th>Tanggal Lahir</th>
-								<th>Usia</th>
-								<th>Jenis kelamin</th>
-								<th>EMAIL AKTIF</th>
-								<th>pendidikan terakhir</th>
-								<th>Status pernikahan</th>
-								<th>Alamat sesuai KTP</th>
-								<th>Alamat domisili saat ini</th>
-								<th>Nomor Telepon</th>
-								<th>Posisi yang dilamar</th>
-								<th>Pengalaman Bekerja</th>
-								<th colspan="2">Apakah anda memiliki mata minus / silinder Jika Iya minus berapa?
-									silinder berapa?</th>
-
-								<th>Apakah anda memiliki riwayat penyakit? jika iya Penyakit apa? Kapan?</th>
-								<th>Apakah anda pernah mengikuti proses seleksi di PT AKUI GROUP(PT. Akui Bird Nest
-									Indonesia, PT. Original Berkah Indonesia, PT. Wallet Abdillah Jabli)Jika iya
-									kapan</th>
-								<th>
-									Apakah anda pernah bekerja di PT AKUI GROUP(PT. Akui Bird Nest Indonesia, PT.
-									Original Berkah Indonesia, PT. Wallet Abdillah Jabli)?
-									Jika Iya Kapan dan Kenapa Anda Resign?</th>
-								<th>Apakah anda sedang mengikuti proses kuliah? Kelas reguler atau karyawan?</th>
-								<th>Apakah anda mempunyai keluarga atau kawan yang bekerja dalam group perusahaan
-									kami? siapa namanya dan apa Jabatannya</th>
-								<th>Berikan penjelasan singkat kenapa anda tertarik di perushaan ini?</th>
-								<th> Berkas Lamaran</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td colspan="2">Larry the Bird</td>
-								<td>@twitter</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
+					</div>
 				</div>
 			</div>
 		</div>
+
 	</div>
 
-	<!-- <footer class="footer">
+	<div class="card" style="overflow-x: scroll;">
+		<div class="card-header">
+			<div class="card-title">Hoverable Table</div>
+		</div>
+		<div class="card-body">
+			<style>
+				th {
+					padding: 0;
+				}
+			</style>
+			<table class="table table-bordered table-hover text-light ">
+				<thead>
+					<tr>
+						<th scope="col">NO</th>
+						<th scope="col">Foto KTP</th>
+						<th scope="col">Nama lengkap sesuai KTP</th>
+						<th scope="col">NIK KTP</th>
+						<th>Tempat lahir</th>
+						<th>Tanggal Lahir</th>
+						<th>Usia</th>
+						<th>Jenis kelamin</th>
+						<th>EMAIL AKTIF</th>
+						<th>pendidikan terakhir</th>
+						<th>Status pernikahan</th>
+						<th>Alamat sesuai KTP</th>
+						<th>Alamat domisili saat ini</th>
+						<th>Nomor Telepon</th>
+						<th>Posisi yang dilamar</th>
+						<th>Pengalaman Bekerja</th>
+						<th colspan="2">Apakah anda memiliki mata minus / silinder Jika Iya minus berapa?
+							silinder berapa?</th>
+
+						<th>Apakah anda memiliki riwayat penyakit? jika iya Penyakit apa? Kapan?</th>
+						<th>Apakah anda pernah mengikuti proses seleksi di PT AKUI GROUP(PT. Akui Bird Nest
+							Indonesia, PT. Original Berkah Indonesia, PT. Wallet Abdillah Jabli)Jika iya
+							kapan</th>
+						<th>
+							Apakah anda pernah bekerja di PT AKUI GROUP(PT. Akui Bird Nest Indonesia, PT.
+							Original Berkah Indonesia, PT. Wallet Abdillah Jabli)?
+							Jika Iya Kapan dan Kenapa Anda Resign?</th>
+						<th>Apakah anda sedang mengikuti proses kuliah? Kelas reguler atau karyawan?</th>
+						<th>Apakah anda mempunyai keluarga atau kawan yang bekerja dalam group perusahaan
+							kami? siapa namanya dan apa Jabatannya</th>
+						<th>Berikan penjelasan singkat kenapa anda tertarik di perushaan ini?</th>
+						<th> Berkas Lamaran</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td colspan="2">Larry the Bird</td>
+						<td>@twitter</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	</div>
+	</div>
+
+	<footer class="footer">
 		<div class="container-fluid">
 			<nav class="pull-left">
 				<ul class="nav">
@@ -1933,7 +2037,7 @@
 		</div>
 	</footer>
 	</div>
-	</div> -->
+	</div>
 
 	<!-- Custom template | don't include it in your project! -->
 	<div class="custom-template">

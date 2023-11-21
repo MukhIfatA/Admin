@@ -24,6 +24,8 @@
 	<link rel="stylesheet" href="../assets/css/atlantis.min.css">
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<link rel="stylesheet" href="../assets/css/demo.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body data-background-color="dark">
@@ -338,7 +340,7 @@
 					<ul class="nav nav-primary">
 						<li class="nav-item ">
 							<!-- class="collapsed" data-toggle="collapse"-->
-							<a href="../starter-template.html" aria-expanded="false">
+							<a href="../index.html" aria-expanded="false">
 								<i class="fas fa-home"></i>
 								<p>Dashboard</p>
 								<!-- <span class="caret"></span> -->
@@ -1180,1142 +1182,1248 @@
 		<div class="content">
 			<div class="page-inner">
 				<section class="justify-content-center" style="width: 100%;">
-					<div class="card m-3d-flex md" style="overflow: hidden;">
-						<div class="card-body border-top border-5 border-warning">
-							<h5 class="card-title text-center p-3">Job Requirement</h5>
 
+
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Job Requirement</h4>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+								</div>
+
+								<!-- Modal body -->
+								<div class="modal-body">
+									<form action="" method="post" enctype="multipart/form-data">
+										<div class="card m-3  md">
+
+
+											<div class="card-body border-top border-5 border-warning">
+												<div class="container">
+													<div class="row">
+														<div class="col-6">
+															<div class="mb-3">
+																<label for="exampleInputEmail1"
+																	class="form-label">Jabatan</label>
+																<input name="jabatan" required type="text"
+																	class="form-control" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+
+															</div>
+															<div class="mb-3">
+																<label for="exampleInputEmail1"
+																	class="form-label">Level</label>
+																<input name="level" required type="text"
+																	class="form-control" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+
+															<div class="mb-2">Jenis Kelamin</div>
+															<div class="form-check">
+																<input name="jenis_kelamin" class="form-check-input"
+																	type="radio" id="">
+																<label class="form-check-label" for="">
+																	Laki-laki
+																</label>
+															</div>
+															<div class="form-check">
+																<input class="form-check-input" type="radio"
+																	name="jenis_kelamin" id="">
+																<label class="form-check-label" for="">
+																	Perempuan
+																</label>
+															</div>
+
+															<label for="exampleInputEmail1"
+																class="form-label"><b>Kualifikasi</b></label>
+															<div class="mb-3">
+																<label for="exampleInputEmail1"
+																	class="form-label">Usia</label>
+																<input name="usia" required type="text"
+																	class="form-control mb-3" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+															<div class="mb-3">
+																<label for="exampleInputEmail1"
+																	class="form-label">Pendidikan</label>
+																<input name="pendidikan" required type="text"
+																	class="form-control mb-3" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+
+															<div class="mb-3">
+																<label for="exampleInputEmail1" class="form-label">Fresh
+																	Graduate</label>
+																<input name="fresh_graduate" required type="text"
+																	class="form-control mb-3" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="mb-3">
+																<label for="exampleInputEmail1"
+																	class="form-label">Pengalaman</label>
+																<input name="pengalaman" required type="text"
+																	class="form-control mb-3" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+
+															<div class="mb-3">
+																<label for="exampleInputEmail1" class="form-label">Nilai
+																	Akademik</label>
+																<input name="nilai_akademik" required type="text"
+																	class="form-control mb-3" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+
+															<label for="exampleInputEmail1" class="form-label"><b>Job
+																	Responsibilities</b></label>
+															<div class="mb-3">
+																<label for="exampleInputEmail1"
+																	class="form-label">Kualifikasi
+																	Kompeten</label>
+																<input name="kualifikasi_kompeten" required type="text"
+																	class="form-control mb-3" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+															<div class="mb-3">
+																<label for="exampleInputEmail1"
+																	class="form-label">Kualifikasi
+																	Komitmen</label>
+																<input name="kualifikasi_komitmen" required type="text"
+																	class="form-control mb-3" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+															<div class="mb-3">
+																<label for="exampleInputEmail1"
+																	class="form-label">Tujuan
+																	Utama</label>
+																<input name="tujuan_utama" required type="text"
+																	class="form-control mb-3" id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+															<div class="mb-3">
+																<label for="exampleInputEmail1"
+																	class="form-label">Tanggung
+																	jawab(kompeten)</label>
+																<input name="tanggung_jawab(kompeten)" required
+																	type="text" class="form-control mb-3"
+																	id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+															<div class="mb-3">
+																<label for="exampleInputEmail1"
+																	class="form-label">Tanggung
+																	jawab(komitmen)</label>
+																<input name="tanggung_jawab(komitmen)" required
+																	type="text" class="form-control mb-3"
+																	id="exampleInputEmail1"
+																	aria-describedby="emailHelp">
+															</div>
+
+														</div>
+													</div>
+												</div>
+												<button name="submit" type="submit" class="btn  btn-warning text-light"
+													onclick="showAlert()" style="width: 100% ;">Submit</button>
+									</form>
+								</div>
+
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+								</div>
+
+							</div>
 						</div>
-
-						<form action="" method="post" enctype="multipart/form-data">
-							<div class="card m-3  md">
-
-
-								<div class="card-body border-top border-5 border-warning">
-									<div class="container">
-										<div class="row">
-											<div class="col-6">
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Jabatan</label>
-													<input name="jabatan" required type="text" class="form-control"
-														id="exampleInputEmail1" aria-describedby="emailHelp">
-
-												</div>
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Level</label>
-													<input name="level" required type="text" class="form-control"
-														id="exampleInputEmail1" aria-describedby="emailHelp">
-												</div>
-
-												<div class="mb-2">Jenis Kelamin</div>
-												<div class="form-check">
-													<input name="jenis_kelamin" class="form-check-input" type="radio"
-														id="">
-													<label class="form-check-label" for="">
-														Laki-laki
-													</label>
-												</div>
-												<div class="form-check">
-													<input class="form-check-input" type="radio" name="jenis_kelamin"
-														id="">
-													<label class="form-check-label" for="">
-														Perempuan
-													</label>
-												</div>
-
-												<label for="exampleInputEmail1"
-													class="form-label"><b>Kualifikasi</b></label>
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Usia</label>
-													<input name="usia" required type="text" class="form-control mb-3"
-														id="exampleInputEmail1" aria-describedby="emailHelp">
-												</div>
-												<div class="mb-3">
-													<label for="exampleInputEmail1"
-														class="form-label">Pendidikan</label>
-													<input name="pendidikan" required type="text"
-														class="form-control mb-3" id="exampleInputEmail1"
-														aria-describedby="emailHelp">
-												</div>
-
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Fresh
-														Graduate</label>
-													<input name="fresh_graduate" required type="text"
-														class="form-control mb-3" id="exampleInputEmail1"
-														aria-describedby="emailHelp">
-												</div>
-											</div>
-											<div class="col-6">
-												<div class="mb-3">
-													<label for="exampleInputEmail1"
-														class="form-label">Pengalaman</label>
-													<input name="pengalaman" required type="text"
-														class="form-control mb-3" id="exampleInputEmail1"
-														aria-describedby="emailHelp">
-												</div>
-
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Nilai
-														Akademik</label>
-													<input name="nilai_akademik" required type="text"
-														class="form-control mb-3" id="exampleInputEmail1"
-														aria-describedby="emailHelp">
-												</div>
-
-												<label for="exampleInputEmail1" class="form-label"><b>Job
-														Responsibilities</b></label>
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Kualifikasi
-														Kompeten</label>
-													<input name="kualifikasi_kompeten" required type="text"
-														class="form-control mb-3" id="exampleInputEmail1"
-														aria-describedby="emailHelp">
-												</div>
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Kualifikasi
-														Komitmen</label>
-													<input name="kualifikasi_komitmen" required type="text"
-														class="form-control mb-3" id="exampleInputEmail1"
-														aria-describedby="emailHelp">
-												</div>
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Tujuan
-														Utama</label>
-													<input name="tujuan_utama" required type="text"
-														class="form-control mb-3" id="exampleInputEmail1"
-														aria-describedby="emailHelp">
-												</div>
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Tanggung
-														jawab(kompeten)</label>
-													<input name="tanggung_jawab(kompeten)" required type="text"
-														class="form-control mb-3" id="exampleInputEmail1"
-														aria-describedby="emailHelp">
-												</div>
-												<div class="mb-3">
-													<label for="exampleInputEmail1" class="form-label">Tanggung
-														jawab(komitmen)</label>
-													<input name="tanggung_jawab(komitmen)" required type="text"
-														class="form-control mb-3" id="exampleInputEmail1"
-														aria-describedby="emailHelp">
-												</div>
-
-											</div>
-										</div>
-									</div>
-									<button name="submit" type="submit" class="btn  btn-warning text-light"
-										onclick="showAlert()" style="width: 100% ;">Submit</button>
-						</form>
 					</div>
+				</section>
+				<div class="card" style="overflow-x: scroll;">
+					<div class="card-title m-3 d-flex justify-content-between">
+						<h2>Job Requirement</h2>
+						<div >
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+								data-bs-target="#myModal">
+								Tambah
+							</button>
+						</div>
+					</div>
+					<table class="table table-primary table-bordered table-hover" cellpadding="0">
+						<thead>
+							<tr>
+								<th rowspan="2">No</th>
+								<th rowspan="2">Jabatan</th>
+								<th rowspan="2">Level</th>
+								<th colspan="2">Jenis Kelamin</th>
+								<th rowspan="2">Usia</th>
+								<th rowspan="2">Pendidikan</th>
+								<th rowspan="2">Fresh Graduate</th>
+								<th rowspan="2">Pengalaman</th>
+								<th rowspan="2">Nilai Akademik</th>
+								<th rowspan="2">Kualifikasi Kompeten</th>
+								<th rowspan="2">Kualifikasi Komitmen</th>
+								<th rowspan="2">TujuanUtama</th>
+								<th rowspan="2">Tanggung Jawab(Kompeten)</th>
+								<th rowspan="2">Tanggung Jawab(Komitmen)</th>
+							</tr>
+							<tr>
+								<th>L</th>
+								<th>P</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Operator Moduling</td>
+								<td>1</td>
+								<td>v</td>
+								<td>v</td>
+								<td>18-35 thun</td>
+								<td>Min SMA</td>
+								<td>v</td>
+								<td>Min 1 tahun</td>
+								<td>Nilai rata-rata minimal 7,00</td>
+								<td>Memahami Sarang Burung Walet</td>
+								<td>Dapat bekerja secara individu teliti,kepemimpinan,disiplin</td>
+								<td>
+									Operator Moulding-borongan bertanggung jawab terhadap pelaksanaan
+									pekerjaan pembuatan Produk moulding sesuai dengan target dan standar
+									perusahaan
+								</td>
+								<td>
+									<style>
+										ol {
+											padding: 0;
+										}
+									</style>
+									<ol type="1">
+										<li>Mempersiapkan sarana prasarana dan material moulding</li>
+										<li>Melaksanakan Pekerjaan pembuatan produk moulding</li>
+										<li>Memberikan saran
+											perbaikan berkelanjutan di workstation terkait</li>
+										<li>Memastikan bahwa
+											pedoman kesehatan, keselamatan serta keamanan kerja dipatuhi di
+											workstation terkait</li>
+										<li>Mengembangkan kompetensi di workstation nya</li>
+
+									</ol>
+								</td>
+								<td>
+									1. Menjalankan budaya kerja <br />
+									Memiliki leadership, integritas, inisiatif, teliti, mandiri,
+									disiplin, dan komunikasi jelas serta persuasif
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Checker Moulding</td>
+								<td>2</td>
+								<td>v</td>
+								<td>v</td>
+								<td>18-35 thun</td>
+								<td>Min SMA</td>
+								<td>-</td>
+								<td>Min 1 tahun</td>
+								<td>Nilai rata-rata minimal 7,00</td>
+								<td>Memahami Sarang Burung Walet</td>
+								<td>Dapat bekerja secara individu teliti,kepemimpinan,disiplin</td>
+								<td>
+									Checker Moulding bertanggung jawab dan memastikan hasil moulding
+									sudah memenuhi standar
+								</td>
+								<td>
+									<ol type="1">
+										<li>Mempersiapkan sarana prasarana dan material(bahan kerja) dari TL
+											Moulding</li>
+										<li>Melaksanakan Pengecekan dan pengontrolan guna memastikan hasil
+											moulding yang sesuai standar (bentuk, warna, serat dan kakian)</li>
+										<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan pembuatan
+											laporan di workstation terkait</li>
+										<li>Memastikan bahwa pedoman
+											kesehatan, keselamatan, serta keamanan kerja dipatuhi di workstation
+											terkait</li>
+										<li>Mengembangkan kompetensi di workstation nya</li>
+									</ol>
+
+								</td>
+								<td>
+									1. Menjalankan budaya kerja Memiliki leadership, integritas,
+									inisiatif, teliti, mandiri, disiplin, dan komunikasi jelas serta
+									persuasif
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Admin Moduling</td>
+								<td>2</td>
+								<td>v</td>
+								<td>v</td>
+								<td>18-35 thun</td>
+								<td>Min D3</td>
+								<td>-</td>
+								<td>Min 2 tahun</td>
+								<td>Nilai IPK 3.OO</td>
+								<td>Memahami MS office, 5R</td>
+								<td>
+									Berjiwa kepemimpinan, mampu bekerja sama antar team, dapat
+									berkomunikasi dengan baik
+								</td>
+								<td>
+									Admin Moulding bertanggung jawab atas pembuatan analisa dan laporan
+									pencapaian produksi di workstation setiap hari sehingga dapat
+									mencapai laporan data yang akurat, tepat waktu dan mampu telusur
+								</td>
+								<td>
+									<ol type="1">
+										<li>Melakukan penarikan data dari workstation sebelumnya dan
+											memastikan kebenaran data stock setiap hari di workstation Moulding.
+											a. Melakukan penginputan penyebaran barang yang akan dikerjakan
+											oleh operator moulding. b. Melakukan analisa data berdasarkan
+											laporan stock dan produktivitas</li>
+										<li>Melakukan evaluasi, saran
+											perbaikan berkelanjutan dan pembuatan laporan di bagian terkait</li>
+										<li>Memastikan bahwa pedoman kesehatan, keselamatan serta keamanan kerja
+											dipatuhi di bagian terkait</li>
+										<li> Mengembangkan kemampuan terkait ilmu
+											administrasi</li>
+
+									</ol>
+
+								</td>
+								<td>
+									1. Menjalankan budaya kerja <br />
+									Memiliki leadership, integritas, inisiatif, teliti, mandiri,
+									disiplin, dan komunikasi jelas serta persuasif
+								</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Trainer Moulding</td>
+								<td>2</td>
+								<td>v</td>
+								<td>v</td>
+								<td>18-35 thun</td>
+								<td>Min SMA</td>
+								<td>-</td>
+								<td>Min 1 tahun</td>
+								<td>Nilai rata-rata minimal 7,00</td>
+								<td>Memahami MS office, 5R, GMP & HACCP</td>
+								<td>
+									Berjiwa kepemimpinan, mampu bekerja sama antar team, dapat
+									berkomunikasi dengan baik
+								</td>
+								<td>
+									Trainer Moulding bertanggung jawab atas terbentuknya kompeten dan
+									komitmen operator baru sehingga menghasilkan produk yang sesuai
+									dengan standar perusahaan.
+								</td>
+								<td>
+									<ol type="1">
+										<li>Melakukan pendistribusian barang yang akan dikerjakan oleh
+											operator dengan tahapan : a. Mastikan barang yang akan dikerjakan
+											operator sesuai dengan jenis barang. b. Memastikan kesesuaian antara
+											barang dengan label. c. Memastikan operator baru menerima barang
+											sesuai dengan target. Memastikan operator baru memenuhi kompeten
+											dan komitmen yang sesuai dengan standar perusahaan.</li>
+										<li> Melakukan
+											evaluasi, saran perbaikan berkelanjutan dan pembuatan laporan di
+											workstation terkait.</li>
+										<li>Memastikan bahwa pedoman kesehatan,
+											keselamatan serta keamanan kerja dipatuhi di workstation terkait</li>
+										<li>Mengembangkan kompetensi di workstation nya.</li>
+
+									</ol>
+
+
+								</td>
+								<td>
+									1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+									inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+									persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
+									mencapai efektivitas dan efisiensi kerja.
+								</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Team Leader Moduling</td>
+								<td>2</td>
+								<td>v</td>
+								<td>v</td>
+								<td>18-35 thun</td>
+								<td>Min SMA</td>
+								<td>-</td>
+								<td>Min 1 tahun</td>
+								<td>Nilai rata-rata minimal 7,00</td>
+								<td>Memahami MS office, 5R, GMP & HACCP</td>
+								<td>
+									Berjiwa kepemimpinan, mampu bekerja sama antar team, dapat
+									berkomunikasi dengan baik.
+								</td>
+								<td>
+									Team Leader Moulding bertanggung jawab atas kompeten dan komitmen
+									bawahan dalam keseharian sehingga bawahan menghasilkan produk sesuai
+									standar perusahaan.
+								</td>
+								<td>
+									<ol type="1">
+										<li>Melakukan pendistribusian barang yang akan dikerjakan oleh
+											operator dengan tahapan : a. Mastikan barang yang akan dikerjakan
+											operator sesuai dengan jenis barang. b. Memastikan kesesuaian antara
+											barang dengan label. c. Memastikan bawahan/operator menerima barang
+											sesuai dengan target. Memastikan proses produksi sesuai dengan
+											kualitas dan kuantitas GPU</li>
+										<li>Melakukan evaluasi, saran perbaikan
+											berkelanjutan dan pembuatan laporan di workstation terkait.</li>
+										<li>Memastikan bahwa pedoman kesehatan, keselamatan serta keamanan kerja
+											dipatuhi di workstation terkait.</li>
+										<li>Mengembangkan bawahan baik
+											secara kompeten dan komitmen sehingga didapatkan bawahan yang siap
+											dipromosikan dalam jangka waktu 1-2 tahun kedepan.</li>
+
+									</ol>
+
+								</td>
+								<td>
+									1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+									inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+									persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
+									mencapai efektivitas dan efisiensi kerja.
+								</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>Group Team Leader Moduling</td>
+								<td>3</td>
+								<td>v</td>
+								<td>v</td>
+								<td>18-35 thun</td>
+								<td>Min SMA</td>
+								<td>-</td>
+								<td>Min 2 tahun</td>
+								<td>Nilai rata-rata minimal 7,00</td>
+								<td>Memahami MS office, 5R, GMP & HACCP</td>
+								<td>
+									Berjiwa kepemimpinan, mampu bekerja sama antar team, dapat
+									berkomunikasi dengan baik
+								</td>
+								<td>
+									GTL Moulding bertanggung jawab untuk mengontrol proses moulding
+									termasuk kualitas dan kuantitas hasil moulding dalam keseharian
+									sehingga dapat mencapai target yang ditetapkan oleh atasan sesuai
+									dengan perencanaan PPIC.
+								</td>
+								<td>
+									<ol type="1">
+										<li> Merencanakan dan mengawasi proses produksi berdasarkan informasi
+											dari atasan dengan cara : a. Memastikan stock. b. Melakukan
+											perhitungan kebutuhan kapasitas moulding per hari. c. Memastikan
+											proses produksi sesuai dengan kualitas dan kuantitas GPU.
+											Mempersiapkan trainer agar sesuai dengan kompeten dan komitmennya.</li>
+										<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan pembuatan
+											laporan di workstation terkait.</li>
+										<li>Memastikan bahwa pedoman
+											kesehatan, keselamatan serta keamanan kerja dipatuhi di workstation
+											terkait.</li>
+										<li> Mengembangkan bawahan baik secara kompeten dan komitmen
+											sehingga didapatkan bawahan yang siap dipromosikan dalam jangka
+											waktu 1-2 tahun kedepan.</li>
+
+									</ol>
+
+								</td>
+								<td>
+									1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+									inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+									persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
+									mencapai efektivitas dan efisiensi kerja.
+								</td>
+							</tr>
+						</tbody>
+						<tr>
+							<td>7</td>
+							<td>Supervisor Moduling</td>
+							<td>4</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min. D3 Semua jurusan</td>
+							<td>-</td>
+							<td>Min 2 tahun</td>
+							<td>Min IPK 3.00</td>
+							<td>Memahami MS office, 5R, HACCP & GMP</td>
+							<td>
+								Berjiwa kepemimpinan, mampu bekerja sama antar team, dapat
+								berkomunikasi dengan baik
+							</td>
+							<td>
+								Supervisor Moulding bertanggung jawab untuk mengontrol stok,
+								kapasitas, produktivitas, susut sesuai standar dan kualitas moulding
+								dalam kesehariannya sesuai perencanaan PPIC sehingga dapat mencapai
+								target, tepat jumlah, tepat kualitas, dan tepat waktu
+							</td>
+							<td>
+								<ol type="1">
+									<li>a. Merencanakan kebutuhan SDM dengan tepat baik kompeten maupun
+										komitmen. b. Penyediaan sarana dan prasarana kerja untuk memenuhi
+										kapasitas produksi di bagiannya per hari.</li>
+									<li>a. Menyediakan bahan atau
+										material kerja. b. Melakukan kontrol stok/WIP. c. Mengawasi semua
+										aktivitas operasional di bagian terkait sesuai dengan SOP, WI dan
+										kebijakan Departemen agar tercapainya kualitas dan kuantitas serta
+										target yang ditetapkan oleh perencanaan PPIC.</li>
+									<li>Melakukan evaluasi,
+										saran perbaikan berkelanjutan dan pembuatan laporan di bagian terkait.</li>
+									<li>Memastikan bahwa pedoman kesehatan, keselamatan serta keamanan
+										kerja dipatuhi di bagian terkait.</li>
+									<li> Mengembangkan bawahan baik secara
+										kompeten dan komitmen sehingga didapatkan bawahan yang siap
+										dipromosikan dalam jangka waktu 1-2 tahun kedepan.</li>
+								</ol>
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+								persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
+								mencapai efektivitas dan efisiensi kerja.
+							</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>OPERATOR CCP 1</td>
+							<td>1</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min SMA</td>
+							<td>v</td>
+							<td>Min 1 tahun</td>
+							<td>Nilai rata-rata minimal 7,00</td>
+							<td>Memahami Sarang Burung Walet</td>
+							<td>Dapat bekerja secara individu teliti, kepemimpinan, disiplin</td>
+							<td>
+								Operator CCP 1 bertanggung jawab terhadap pelaksanaan pekerjaan
+								pembersihan produk sarang burung walet sesuai dengan target dan
+								standar perusahaan.
+							</td>
+							<td>
+								<ol type="1">
+									<li>Mempersiapkan sarana prasarana dan material cabut.</li>
+									<li>Melaksanakan
+										pekerjaan pembersihan produk sarang burung walet.</li>
+									<li>Memberikan saran
+										perbaikan berkelanjutan di workstation terkait.</li>
+									<li> Memastikan bahwa
+										pedoman kesehatan, keselamatan serta keamanan kerja dipatuhi di
+										workstation terkait.</li>
+									<li> Mengembangkan kompetensi di workstation nya</li>
+								</ol>
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja. 2 Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+								persuasif.
+							</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>Operator Cabut</td>
+							<td>1</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min SMA</td>
+							<td>-</td>
+							<td>Min 1 tahun</td>
+							<td>Nilai rata-rata minimal 7,00</td>
+							<td>Memahami Sarang Burung Walet</td>
+							<td>Dapat bekerja secara individu teliti,kepemimpinan,disiplin</td>
+							<td>
+								Operator cabut bertanggung jawab terhadap pelaksanaan pekerjaan
+								pembersihan produk sarang burung walet sesuai dengan target dan
+								standar perusahaan.
+							</td>
+							<td>
+								<ol type="1">
+									<li> Mempersiapkan sarana prasarana dan material cabut.</li>
+									<li>Melaksanakan
+										pekerjaan pembersihan produk sarang burung walet.</li>
+									<li>Memberikan saran
+										perbaikan berkelanjutan di workstation terkait.</li>
+									<li>Memastikan bahwa
+										pedoman kesehatan, keselamatan serta keamanan kerja dipatuhi di
+										workstation terkait.</li>
+									<li> Mengembangkan kompetensi di workstation nya.</li>
+								</ol>
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja. 2.Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+								persuasif.
+							</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>Checker Cabut Hancuran</td>
+							<td>2</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min SMA</td>
+							<td>-</td>
+							<td>Min 1 tahun</td>
+							<td>Nilai rata-rata minimal 7,00</td>
+							<td>Memahami Sarang Burung Walet</td>
+							<td>Dapat bekerja secara individu teliti,kepemimpinan,disiplin</td>
+							<td>
+								Checker cabut hancuran bertanggung jawab dan memastikan hasil
+								pembersihan sarang burung walet sesuai dengan standar
+							</td>
+							<td>
+								<ol type="1">
+									<li> Mempersiapkan sarana prasarana dan material (bahan kerja) dari TL
+										Cabut Hancuran.</li>
+									<li>Melaksanakan pengecekan dan pengontrolan guna
+										memastikan hasil pembersihan sarang burung walet sesuai dengan
+										standar.</li>
+									<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan
+										pembuatan laporan di workstation terkait.</li>
+									<li>Memastikan bahwa pedoman
+										kesehatan, keselamatan serta keamanan kerja dipatuhi di workstation
+										terkait.</li>
+									<li>Mengembangkan kompetensi di workstation nya.</li>
+								</ol>
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin, dan komunikasi jelas serta
+								persuasif
+							</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>Trainer Cabut</td>
+							<td>2</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min SMA</td>
+							<td>-</td>
+							<td>Min 2 tahun</td>
+							<td>Min. Nilai Rata Rata 80</td>
+							<td>Memahami 5R, Ms. Office, Memahami GMP dan HACCP</td>
+							<td>
+								Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
+							</td>
+							<td>
+								Team Leader Cabut bertanggung jawab untuk mengontrol kapasitas,
+								produktivitas dan kualitas hasil Cabut dalam keseharian, sehingga
+								mencapai target yang diharapkan perusahaan.
+							</td>
+							<td>
+								<ol type="1">
+									<li> Melakukan pendistribusian barang yang akan dikerjakan oleh operator
+										dengan tahapan : a. Mastikan barang yang akan dikerjakan operator
+										sesuai dengan jenis barang. b. Memastikan kesesuaian antara barang
+										dengan label. c. Memastikan operator baru menerima barang sesuai
+										dengan target. </li>
+									<li>Memastikan operator baru memenuhi kompeten dan
+										komitmen yang sesuai dengan standar perusahaan.</li>
+									<li>Melakukan evaluasi,
+										saran perbaikan berkelanjutan dan pembuatan laporan di workstation
+										terkait.</li>
+									<li>Memastikan bahwa pedoman kesehatan, keselamatan serta
+										keamanan kerja dipatuhi di workstation terkait. </li>
+									<li> Mengembangkan
+										kompetensi di workstation nya</li>
+								</ol>
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+								persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
+								mencapai efektivitas dan efisiensi kerja.
+							</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>TEAM LEADER CCP 1 CABUT</td>
+							<td>1</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min SMA</td>
+							<td>-</td>
+							<td>Min 2 tahun</td>
+							<td>Min. Nilai Rata Rata 80</td>
+							<td>Memahami 5R, Ms. Office, Memahami GMP dan HACCP</td>
+							<td>
+								Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
+							</td>
+							<td>
+								Team Leader Cabut bertanggung jawab untuk mengontrol kapasitas,
+								produktivitas dan kualitas hasil Cabut dalam keseharian, sehingga
+								mencapai target yang diharapkan perusahaan.
+							</td>
+							<td>
+								<ol type="1">
+									<li>Melakukan pendistribusian dan memastikan barang yang akan
+										dikerjakan operator sesuai dengan standar.</li>
+									<li>Memastikan kualitas dan
+										kuantitas proses produksi sesuai standar yang telah ditentukan.</li>
+									<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan pembuatan
+										laporan di workstation terkait.</li>
+									<li> Memastikan bahwa pedoman kesehatan,
+										keselamatan serta keamanan kerja dipatuhi di workstation terkait.</li>
+									<li>Mengembangkan bawahan baik secara kompeten dan komitmen sehingga
+										didapatkan bawahan yang siap dipromosikan dalam jangka waktu 1-2 tahun
+										kedepan.</li>
+								</ol>
+
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+								persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
+								mencapai efektivitas dan efisiensi kerja.
+							</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>Team Leader cabut hancuran</td>
+							<td>2</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min SMA</td>
+							<td>-</td>
+							<td>Min 2 tahun</td>
+							<td>Min. Nilai Rata Rata 80</td>
+							<td>Memahami 5R, Ms. Office, Memahami GMP dan HACCP</td>
+							<td>
+								Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
+							</td>
+							<td>
+								Team Leader Cabut bertanggung jawab untuk mengontrol kapasitas,
+								produktivitas dan kualitas hasil Cabut dalam keseharian, sehingga
+								mencapai target yang diharapkan perusahaan.
+							</td>
+							<td>
+								<ol type="1">
+									<li> Melakukan pendistribusian barang yang akan dikerjakan oleh operator
+										dengan tahapan : a. Mastikan barang yang akan dikerjakan operator
+										sesuai dengan jenis barang. b. Memastikan kesesuaian antara barang
+										dengan label. c. Memastikan bawahan/operator menerima barang sesuai
+										dengan target.</li>
+									<li>a. Memastikan hasil susutan tidak melebihi standar
+										yang telah ditentukan. b. Melakukan evaluasi, saran perbaikan
+										berkelanjutan dan pembuatan laporan di workstation terkait.</li>
+									<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan pembuatan
+										laporan di workstation terkait. </li>
+									<li>Memastikan bahwa pedoman kesehatan,
+										keselamatan serta keamanan kerja dipatuhi di workstation terkait.</li>
+									<li>Mengembangkan bawahan baik secara kompeten dan komitmen sehingga
+										didapatkan bawahan yang siap dipromosikan dalam jangka waktu 1-2 tahun
+										kedepan.</li>
+								</ol>
+
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+								persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
+								mencapai efektivitas dan efisiensi kerja.
+							</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td>TEAM LEADER CABUT MANGKOK</td>
+							<td>2</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min SMA</td>
+							<td>-</td>
+							<td>Min 2 tahun</td>
+							<td>Nilai rata-rata minimal 80</td>
+							<td>Memahami 5R, Ms. Office, Memahami GMP dan HACCP</td>
+							<td>
+								Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
+							</td>
+							<td>
+								Team Leader Cabut bertanggung jawab untuk mengontrol kapasitas,
+								produktivitas dan kualitas hasil Cabut dalam keseharian, sehingga
+								mencapai target yang diharapkan perusahaan.
+							</td>
+							<td>
+								<ol type="1">
+									<li> Melakukan pendistribusian barang yang akan dikerjakan oleh operator
+										dengan tahapan : a. Mastikan barang yang akan dikerjakan operator
+										sesuai dengan jenis barang. b. Memastikan kesesuaian antara barang
+										dengan label. c. Memastikan bawahan/operator menerima barang sesuai
+										dengan target.</li>
+									<li>a. Memastikan hasil susutan tidak melebihi standar
+										yang telah ditentukan. b. Melakukan evaluasi, saran perbaikan
+										berkelanjutan dan pembuatan laporan di workstation terkait.</li>
+									<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan pembuatan
+										laporan di workstation terkait.</li>
+									<li>Memastikan bahwa pedoman kesehatan,
+										keselamatan serta keamanan kerja dipatuhi di workstation terkait. </li>
+									<li>Mengembangkan bawahan baik secara kompeten dan komitmen sehingga
+										didapatkan bawahan yang siap dipromosikan dalam jangka waktu 1-2 tahun
+										kedepan.</li>
+								</ol>
+
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+								persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
+								mencapai efektivitas dan efisiensi kerja.
+							</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>Admin Cabut</td>
+							<td>2</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min SMA</td>
+							<td>-</td>
+							<td>Min 2 tahun</td>
+							<td>Nilai rata-rata minimal 80</td>
+							<td>Memahami MS office, 5R</td>
+							<td>
+								Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
+							</td>
+							<td>
+								Admin Cabut bertanggung jawab atas pembuatan analisa dan laporan
+								pencapaian produksi di workstation setiap hari sehingga dapat mencapai
+								laporan data yang akurat, tepat waktu dan mampu telusur.
+							</td>
+							<td>
+								<ol type="1">
+									<li> Melakukan penarikan data dari workstation sebelumnya dan memastikan
+										kebenaran data stock setiap hari di workstation Cabut.</li>
+									<li>a. Melakukan
+										penginputan penyebaran barang yang akan dikerjakan oleh operator cabut
+										mangkok. b. Melakukan analisa data berdasarkan laporan stock dan
+										produktivitas.</li>
+									<li>Melakukan evaluasi, saran perbaikan berkelanjutan
+										dan pembuatan laporan di bagian terkait.</li>
+									<li>Memastikan bahwa pedoman
+										kesehatan, keselamatan serta keamanan kerja dipatuhi di bagian
+										terkait.</li>
+									<li>Mengembangkan kemampuan terkait ilmu administrasi.</li>
+								</ol>
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+								persuasif.
+							</td>
+						</tr>
+						<tr>
+							<td>16</td>
+							<td>ADMIN DRYING</td>
+							<td>2</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min SMA</td>
+							<td>-</td>
+							<td>Min 2 tahun</td>
+							<td>Nilai rata-rata minimal 80</td>
+							<td>Memahami MS office, 5R</td>
+							<td>
+								Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
+							</td>
+							<td>
+								Admin Drying bertanggung jawab atas pembuatan analisa dan laporan
+								pencapaian produksi di workstation setiap hari sehingga dapat mencapai
+								laporan data yang akurat, tepat waktu dan mampu telusur.
+							</td>
+							<td>
+								<ol type="1">
+									<li>Melakukan penarikan data dari workstation sebelumnya dan memastikan
+										kebenaran data stock setiap hari di workstation Drying.</li>
+									<li>a.
+										Melakukan penginputan barang hasil pekerjaan operator cabut mangkok.
+										b. Melakukan analisa data berdasarkan laporan stock dan produktivitas.</li>
+									<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan pembuatan
+										laporan di bagian terkait.</li>
+									<li>Memastikan bahwa pedoman kesehatan,
+										keselamatan serta keamanan kerja dipatuhi di bagian terkait. </li>
+									<li>Mengembangkan kemampuan terkait ilmu administrasi.</li>
+								</ol>
+
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+								persuasif.
+							</td>
+						</tr>
+						<tr>
+							<td>17</td>
+							<td>Group Team Leader Drying</td>
+							<td>3</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min SMA</td>
+							<td>-</td>
+							<td>Min 2 tahun</td>
+							<td>Nilai rata-rata minimal 80</td>
+							<td>
+								Memahami 5R, Ms. Office, Memahami GMP dan HACCP, mampu membuat stock
+							</td>
+							<td>
+								Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
+							</td>
+							<td>
+								Group Team Leader Drying bertanggung jawab untuk mengontrol kapasitas,
+								produktivitas dan kualitas hasil Drying dalam keseharian, sehingga
+								mencapai target yang ditetapkan oleh atasan sesuai dengan perencanaan
+								PPIC.
+							</td>
+							<td>
+								<ol type="1">
+									<li>Merencanakan dan mengawasi proses produksi berdasarkan informasi
+										dari atasan dengan cara: a. Memastikan stok. b. Memastikan kualitas
+										dan kuantitas proses timbang sesuai dengan standar yang telah
+										ditetapkan.</li>
+									<li> Melakukan evaluasi, saran perbaikan berkelanjutan dan
+										pembuatan laporan di workstation terkait.</li>
+									<li>Memastikan bahwa pedoman
+										kesehatan, keselamatan serta keamanan kerja dipatuhi di workstation
+										terkait.</li>
+									<li>Mengembangkan bawahan baik secara kompeten dan komitmen
+										sehingga didapatkan bawahan yang siap dipromosikan dalam jangka waktu
+										1-2 tahun kedepan.</li>
+
+								</ol>
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+								persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
+								mencapai efektivitas dan efisiensi kerja.
+							</td>
+						</tr>
+						<tr>
+							<td>18</td>
+							<td>GROUP TEAM LEADER CABUT</td>
+							<td>3</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min SMA</td>
+							<td>-</td>
+							<td>Min 2 tahun</td>
+							<td>Nilai rata-rata minimal 80</td>
+							<td>
+								Memahami 5R, Ms. Office, Memahami GMP dan HACCP, mampu membuat stock
+							</td>
+							<td>
+								Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
+							</td>
+							<td>
+								Group Team Leader Cabut bertanggung jawab untuk mengontrol kapasitas,
+								produktivitas dan kualitas hasil Cabut Mangkok, Cabut Hancuran, dan
+								CCP 1 dalam keseharian, sehingga mencapai target yang ditetapkan oleh
+								atasan sesuai dengan perencanaan PPIC.
+							</td>
+							<td>
+								<ol type="1">
+									<li>Merencanakan dan mengawasi proses produksi berdasarkan informasi
+										dari atasan dengan cara: a. Memastikan stok. b. Melakukan perhitungan
+										kebutuhan kapasitas cabut mangkok, cabut hancuran dan CCP1 per hari.
+										c. Memastikan kulitas dan kuantitas proses cabut mangkok, cabut
+										hancuran dan CCP1 sesuai dengan standar yang telah ditetapkan.</li>
+									<li>Mengontrol hasil susutan agar tidak melebihi standar yang telah
+										ditentukan. </li>
+									<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan
+										pembuatan laporan di workstation terkait.</li>
+									<li>Memastikan bahwa pedoman
+										kesehatan, keselamatan serta keamanan kerja dipatuhi di workstation
+										terkait.</li>
+									<li> Mengembangkan bawahan baik secara kompeten dan komitmen
+										sehingga didapatkan bawahan yang siap dipromosikan dalam jangka waktu
+										1-2 tahun kedepan.</li>
+								</ol>
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+								persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
+								mencapai efektivitas dan efisiensi kerja.
+							</td>
+						</tr>
+						<tr>
+							<td>19</td>
+							<td>SUPERVISOR CABUT & DRYING</td>
+							<td>4</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min D3 Semua Jurusan</td>
+							<td>-</td>
+							<td>Min 2 tahun</td>
+							<td>Min IPK 3.00</td>
+							<td>Memahami MS office, 5R, HACCP & GMP</td>
+							<td>
+								Berjiwa kepemimpinan, mampu bekerja sama antar team, dapat
+								berkomunikasi dengan baik
+							</td>
+							<td>
+								Supervisor cabut & drying bertanggung jawab untuk mengawasi pencapaian
+								produksi, mengontrol stok, kapasitas, produktivitas, susut sesuai
+								standar dan kualitas di bagiannya sesuai dengan perencanaan PPIC dalam
+								kesehariannya sehingga dapat mencapai target, tepat jumlah, tepat
+								kualitas, dan tepat waktu.
+							</td>
+							<td>
+								<ol type="1">
+									<li>a. Merencanakan kebutuhan SDM dengan tepat baik kompeten maupun
+										komitmen. b. Penyediaan sarana dan prasarana kerja untuk memenuhi
+										kapasitas produksi di bagiannya per hari.</li>
+									<li> a. Menyediakan bahan atau
+										material kerja. b. Melakukan kontrol stok/WIP. c. Mengawasi semua
+										aktivitas operasional di bagian terkait sesuai dengan SOP, WI dan
+										kebijakan Departemen agar tercapainya kualitas dan kuantitas serta
+										target yang ditetapkan oleh perencanaan PPIC.</li>
+									<li> Melakukan evaluasi,
+										saran perbaikan berkelanjutan dan pembuatan laporan di bagian terkait.</li>
+									<li> Memastikan bahwa pedoman kesehatan, keselamatan serta keamanan
+										kerja dipatuhi di bagian terkait. </li>
+									<li> Mengembangkan bawahan baik secara
+										kompeten dan komitmen sehingga didapatkan bawahan yang siap
+										dipromosikan dalam jangka waktu 1-2 tahun kedepan.</li>
+								</ol>
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+								persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
+								mencapai efektivitas dan efisiensi kerja.
+							</td>
+						</tr>
+						<tr>
+							<td>20</td>
+							<td>OPERATOR PACKING</td>
+							<td>1</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min SMA</td>
+							<td>v</td>
+							<td>Min 1 tahun</td>
+							<td>Nilai rata-rata minimal 7,00</td>
+							<td>Memahami Sarang Burung Walet</td>
+							<td>Dapat bekerja secara individu teliti,kepemimpinan,disiplin</td>
+							<td>
+								Operator packing - harian bertanggung jawab terhadap pelaksanaan
+								pekerjaan pembuatan produk packing (steam / semprot / timbang patahan
+								/ vakum / kleam / sring / timbang pcs / grading bentuk warna / input
+								stok / gabung stok / hitung gramasi / tempel stiker / scan out /
+								packing ).
+							</td>
+							<td>
+								<ol type="1">
+									<li> Mempersiapkan sarana prasarana dan material packing.</li>
+									<li>Melaksanakan (steam /semprot /timbang patahan /vakum /kleam /sring
+										/timbang pcs /grading bentuk warna /input stok /gabung stok /hitung
+										gramasi /tempel stiker / scan out / packing ) sesuai standar.</li>
+									<li>Memberikan saran perbaikan berkelanjutan di workstation terkait.</li>
+									<li>Memastikan bahwa pedoman kesehatan, keselamatan serta keamanan kerja
+										dipatuhi di workstation terkait.</li>
+									<li>
+										5. Mengembangkan kompetensi di
+										workstation nya.</li>
+								</ol>
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+								persuasif.
+							</td>
+						</tr>
+						<tr>
+							<td>21</td>
+							<td>Checker packing</td>
+							<td>2</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min SMA</td>
+							<td>v</td>
+							<td>Min 1 tahun</td>
+							<td>Nilai rata-rata minimal 7,00</td>
+							<td>Memahami Sarang Burung Walet</td>
+							<td>Dapat bekerja secara individu teliti, kepemimpinan, disiplin,</td>
+							<td>
+								Checker packing bertanggung jawab dan memastikan hasil proses packing
+								sudah memenuhi standar.
+							</td>
+							<td>
+								<ol type="1">
+									<li>Mempersiapkan sarana prasarana dan material (bahan kerja) dari TL
+										packing.</li>
+									<li>Melaksanakan pengecekan dan pengontrolan guna memastikan
+										hasil packing yang sesuai standar.</li>
+									<li> Melakukan evaluasi, saran
+										perbaikan berkelanjutan dan pembuatan laporan di workstation terkait.</li>
+									<li>Memastikan bahwa pedoman kesehatan, keselamatan serta keamanan
+										kerja dipatuhi di workstation terkait.</li>
+									<li> Mengembangkan kompetensi di
+										workstation nya.</li>
+								</ol>
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+								persuasif.
+							</td>
+						</tr>
+						<tr>
+							<td>22</td>
+							<td>Admin Packing</td>
+							<td>2</td>
+							<td>v</td>
+							<td>v</td>
+							<td>18-35 thun</td>
+							<td>Min. D3 Semua jurusan</td>
+							<td>v</td>
+							<td>Min 1 tahun</td>
+							<td>Nilai rata-rata minimal 7,00</td>
+							<td>Memahami MS office, 5R</td>
+							<td>
+								Berjiwa kepemimpinan, mampu bekerja sama antar team, dapat
+								berkomunikasi dengan baik
+							</td>
+							<td>
+								Admin Packing bertanggung jawab atas pembuatan analisa dan laporan
+								pencapaian produksi di workstation setiap hari sehingga dapat mencapai
+								laporan data yang akurat, tepat waktu dan mampu telusur.
+							</td>
+							<td>
+								<ol type="1">
+									<li>Melakukan penarikan data dari workstation sebelumnya dan memastikan
+										kebenaran data stock setiap hari di workstation Packing. </li>
+									<li>a.
+										Melakukan pengontrolan data yang telah discan oleh operator packing.
+										b. Melakukan analisa data berdasarkan laporan stock dan produktivitas.</li>
+									<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan pembuatan
+										laporan di bagian terkait.</li>
+									<li> bahwa pedoman kesehatan,
+										keselamatan serta keamanan kerja dipatuhi di bagian terkait</li>
+									<li>Mengembangkan kemampuan terkait ilmu administrasi.</li>
+								</ol>
+
+
+							</td>
+							<td>
+								1. Menjalankan budaya kerja. Memiliki leadership, integritas,
+								inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
+								persuasif.
+							</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
-		</section>
-		<div class="card" style="overflow-x: scroll;">
-			<h2>Job Requirement</h2>
-			<table class="table table-bordered" width="200%" cellpadding="0">
-				<thead>
-					<tr>
-						<th rowspan="2">No</th>
-						<th rowspan="2">Jabatan</th>
-						<th rowspan="2">Level</th>
-						<th colspan="2">Jenis Kelamin</th>
-						<th rowspan="2">Usia</th>
-						<th rowspan="2">Pendidikan</th>
-						<th rowspan="2">Fresh Graduate</th>
-						<th rowspan="2">Pengalaman</th>
-						<th rowspan="2">Nilai Akademik</th>
-						<th rowspan="2">Kualifikasi Kompeten</th>
-						<th rowspan="2">Kualifikasi Komitmen</th>
-						<th rowspan="2">TujuanUtama</th>
-						<th rowspan="2">Tanggung Jawab(Kompeten)</th>
-						<th rowspan="2">Tanggung Jawab(Komitmen)</th>
-					</tr>
-					<tr>
-						<th>L</th>
-						<th>P</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>Operator Moduling</td>
-						<td>1</td>
-						<td>v</td>
-						<td>v</td>
-						<td>18-35 thun</td>
-						<td>Min SMA</td>
-						<td>v</td>
-						<td>Min 1 tahun</td>
-						<td>Nilai rata-rata minimal 7,00</td>
-						<td>Memahami Sarang Burung Walet</td>
-						<td>Dapat bekerja secara individu teliti,kepemimpinan,disiplin</td>
-						<td>
-							Operator Moulding-borongan bertanggung jawab terhadap pelaksanaan
-							pekerjaan pembuatan Produk moulding sesuai dengan target dan standar
-							perusahaan
-						</td>
-						<td>
-							<style>
-								ol {
-									padding: 0;
-								}
-							</style>
-							<ol type="1">
-								<li>Mempersiapkan sarana prasarana dan material moulding</li>
-								<li>Melaksanakan Pekerjaan pembuatan produk moulding</li>
-								<li>Memberikan saran
-									perbaikan berkelanjutan di workstation terkait</li>
-								<li>Memastikan bahwa
-									pedoman kesehatan, keselamatan serta keamanan kerja dipatuhi di
-									workstation terkait</li>
-								<li>Mengembangkan kompetensi di workstation nya</li>
-
-							</ol>
-						</td>
-						<td>
-							1. Menjalankan budaya kerja <br />
-							Memiliki leadership, integritas, inisiatif, teliti, mandiri,
-							disiplin, dan komunikasi jelas serta persuasif
-						</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>Checker Moulding</td>
-						<td>2</td>
-						<td>v</td>
-						<td>v</td>
-						<td>18-35 thun</td>
-						<td>Min SMA</td>
-						<td>-</td>
-						<td>Min 1 tahun</td>
-						<td>Nilai rata-rata minimal 7,00</td>
-						<td>Memahami Sarang Burung Walet</td>
-						<td>Dapat bekerja secara individu teliti,kepemimpinan,disiplin</td>
-						<td>
-							Checker Moulding bertanggung jawab dan memastikan hasil moulding
-							sudah memenuhi standar
-						</td>
-						<td>
-							<ol type="1">
-								<li>Mempersiapkan sarana prasarana dan material(bahan kerja) dari TL
-									Moulding</li>
-								<li>Melaksanakan Pengecekan dan pengontrolan guna memastikan hasil
-									moulding yang sesuai standar (bentuk, warna, serat dan kakian)</li>
-								<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan pembuatan
-									laporan di workstation terkait</li>
-								<li>Memastikan bahwa pedoman
-									kesehatan, keselamatan, serta keamanan kerja dipatuhi di workstation
-									terkait</li>
-								<li>Mengembangkan kompetensi di workstation nya</li>
-							</ol>
-
-						</td>
-						<td>
-							1. Menjalankan budaya kerja Memiliki leadership, integritas,
-							inisiatif, teliti, mandiri, disiplin, dan komunikasi jelas serta
-							persuasif
-						</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>Admin Moduling</td>
-						<td>2</td>
-						<td>v</td>
-						<td>v</td>
-						<td>18-35 thun</td>
-						<td>Min D3</td>
-						<td>-</td>
-						<td>Min 2 tahun</td>
-						<td>Nilai IPK 3.OO</td>
-						<td>Memahami MS office, 5R</td>
-						<td>
-							Berjiwa kepemimpinan, mampu bekerja sama antar team, dapat
-							berkomunikasi dengan baik
-						</td>
-						<td>
-							Admin Moulding bertanggung jawab atas pembuatan analisa dan laporan
-							pencapaian produksi di workstation setiap hari sehingga dapat
-							mencapai laporan data yang akurat, tepat waktu dan mampu telusur
-						</td>
-						<td>
-							<ol type="1">
-								<li>Melakukan penarikan data dari workstation sebelumnya dan
-									memastikan kebenaran data stock setiap hari di workstation Moulding.
-									a. Melakukan penginputan penyebaran barang yang akan dikerjakan
-									oleh operator moulding. b. Melakukan analisa data berdasarkan
-									laporan stock dan produktivitas</li>
-								<li>Melakukan evaluasi, saran
-									perbaikan berkelanjutan dan pembuatan laporan di bagian terkait</li>
-								<li>Memastikan bahwa pedoman kesehatan, keselamatan serta keamanan kerja
-									dipatuhi di bagian terkait</li>
-								<li> Mengembangkan kemampuan terkait ilmu
-									administrasi</li>
-
-							</ol>
-
-						</td>
-						<td>
-							1. Menjalankan budaya kerja <br />
-							Memiliki leadership, integritas, inisiatif, teliti, mandiri,
-							disiplin, dan komunikasi jelas serta persuasif
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>Trainer Moulding</td>
-						<td>2</td>
-						<td>v</td>
-						<td>v</td>
-						<td>18-35 thun</td>
-						<td>Min SMA</td>
-						<td>-</td>
-						<td>Min 1 tahun</td>
-						<td>Nilai rata-rata minimal 7,00</td>
-						<td>Memahami MS office, 5R, GMP & HACCP</td>
-						<td>
-							Berjiwa kepemimpinan, mampu bekerja sama antar team, dapat
-							berkomunikasi dengan baik
-						</td>
-						<td>
-							Trainer Moulding bertanggung jawab atas terbentuknya kompeten dan
-							komitmen operator baru sehingga menghasilkan produk yang sesuai
-							dengan standar perusahaan.
-						</td>
-						<td>
-							<ol type="1">
-								<li>Melakukan pendistribusian barang yang akan dikerjakan oleh
-									operator dengan tahapan : a. Mastikan barang yang akan dikerjakan
-									operator sesuai dengan jenis barang. b. Memastikan kesesuaian antara
-									barang dengan label. c. Memastikan operator baru menerima barang
-									sesuai dengan target. Memastikan operator baru memenuhi kompeten
-									dan komitmen yang sesuai dengan standar perusahaan.</li>
-								<li> Melakukan
-									evaluasi, saran perbaikan berkelanjutan dan pembuatan laporan di
-									workstation terkait.</li>
-								<li>Memastikan bahwa pedoman kesehatan,
-									keselamatan serta keamanan kerja dipatuhi di workstation terkait</li>
-								<li>Mengembangkan kompetensi di workstation nya.</li>
-
-							</ol>
-
-
-						</td>
-						<td>
-							1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-							inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-							persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
-							mencapai efektivitas dan efisiensi kerja.
-						</td>
-					</tr>
-					<tr>
-						<td>5</td>
-						<td>Team Leader Moduling</td>
-						<td>2</td>
-						<td>v</td>
-						<td>v</td>
-						<td>18-35 thun</td>
-						<td>Min SMA</td>
-						<td>-</td>
-						<td>Min 1 tahun</td>
-						<td>Nilai rata-rata minimal 7,00</td>
-						<td>Memahami MS office, 5R, GMP & HACCP</td>
-						<td>
-							Berjiwa kepemimpinan, mampu bekerja sama antar team, dapat
-							berkomunikasi dengan baik.
-						</td>
-						<td>
-							Team Leader Moulding bertanggung jawab atas kompeten dan komitmen
-							bawahan dalam keseharian sehingga bawahan menghasilkan produk sesuai
-							standar perusahaan.
-						</td>
-						<td>
-							<ol type="1">
-								<li>Melakukan pendistribusian barang yang akan dikerjakan oleh
-									operator dengan tahapan : a. Mastikan barang yang akan dikerjakan
-									operator sesuai dengan jenis barang. b. Memastikan kesesuaian antara
-									barang dengan label. c. Memastikan bawahan/operator menerima barang
-									sesuai dengan target. Memastikan proses produksi sesuai dengan
-									kualitas dan kuantitas GPU</li>
-								<li>Melakukan evaluasi, saran perbaikan
-									berkelanjutan dan pembuatan laporan di workstation terkait.</li>
-								<li>Memastikan bahwa pedoman kesehatan, keselamatan serta keamanan kerja
-									dipatuhi di workstation terkait.</li>
-								<li>Mengembangkan bawahan baik
-									secara kompeten dan komitmen sehingga didapatkan bawahan yang siap
-									dipromosikan dalam jangka waktu 1-2 tahun kedepan.</li>
-
-							</ol>
-
-						</td>
-						<td>
-							1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-							inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-							persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
-							mencapai efektivitas dan efisiensi kerja.
-						</td>
-					</tr>
-					<tr>
-						<td>6</td>
-						<td>Group Team Leader Moduling</td>
-						<td>3</td>
-						<td>v</td>
-						<td>v</td>
-						<td>18-35 thun</td>
-						<td>Min SMA</td>
-						<td>-</td>
-						<td>Min 2 tahun</td>
-						<td>Nilai rata-rata minimal 7,00</td>
-						<td>Memahami MS office, 5R, GMP & HACCP</td>
-						<td>
-							Berjiwa kepemimpinan, mampu bekerja sama antar team, dapat
-							berkomunikasi dengan baik
-						</td>
-						<td>
-							GTL Moulding bertanggung jawab untuk mengontrol proses moulding
-							termasuk kualitas dan kuantitas hasil moulding dalam keseharian
-							sehingga dapat mencapai target yang ditetapkan oleh atasan sesuai
-							dengan perencanaan PPIC.
-						</td>
-						<td>
-							<ol type="1">
-								<li> Merencanakan dan mengawasi proses produksi berdasarkan informasi
-									dari atasan dengan cara : a. Memastikan stock. b. Melakukan
-									perhitungan kebutuhan kapasitas moulding per hari. c. Memastikan
-									proses produksi sesuai dengan kualitas dan kuantitas GPU.
-									Mempersiapkan trainer agar sesuai dengan kompeten dan komitmennya.</li>
-								<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan pembuatan
-									laporan di workstation terkait.</li>
-								<li>Memastikan bahwa pedoman
-									kesehatan, keselamatan serta keamanan kerja dipatuhi di workstation
-									terkait.</li>
-								<li> Mengembangkan bawahan baik secara kompeten dan komitmen
-									sehingga didapatkan bawahan yang siap dipromosikan dalam jangka
-									waktu 1-2 tahun kedepan.</li>
-
-							</ol>
-
-						</td>
-						<td>
-							1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-							inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-							persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
-							mencapai efektivitas dan efisiensi kerja.
-						</td>
-					</tr>
-				</tbody>
-				<tr>
-					<td>7</td>
-					<td>Supervisor Moduling</td>
-					<td>4</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min. D3 Semua jurusan</td>
-					<td>-</td>
-					<td>Min 2 tahun</td>
-					<td>Min IPK 3.00</td>
-					<td>Memahami MS office, 5R, HACCP & GMP</td>
-					<td>
-						Berjiwa kepemimpinan, mampu bekerja sama antar team, dapat
-						berkomunikasi dengan baik
-					</td>
-					<td>
-						Supervisor Moulding bertanggung jawab untuk mengontrol stok,
-						kapasitas, produktivitas, susut sesuai standar dan kualitas moulding
-						dalam kesehariannya sesuai perencanaan PPIC sehingga dapat mencapai
-						target, tepat jumlah, tepat kualitas, dan tepat waktu
-					</td>
-					<td>
-						<ol type="1">
-							<li>a. Merencanakan kebutuhan SDM dengan tepat baik kompeten maupun
-								komitmen. b. Penyediaan sarana dan prasarana kerja untuk memenuhi
-								kapasitas produksi di bagiannya per hari.</li>
-							<li>a. Menyediakan bahan atau
-								material kerja. b. Melakukan kontrol stok/WIP. c. Mengawasi semua
-								aktivitas operasional di bagian terkait sesuai dengan SOP, WI dan
-								kebijakan Departemen agar tercapainya kualitas dan kuantitas serta
-								target yang ditetapkan oleh perencanaan PPIC.</li>
-							<li>Melakukan evaluasi,
-								saran perbaikan berkelanjutan dan pembuatan laporan di bagian terkait.</li>
-							<li>Memastikan bahwa pedoman kesehatan, keselamatan serta keamanan
-								kerja dipatuhi di bagian terkait.</li>
-							<li> Mengembangkan bawahan baik secara
-								kompeten dan komitmen sehingga didapatkan bawahan yang siap
-								dipromosikan dalam jangka waktu 1-2 tahun kedepan.</li>
-						</ol>
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-						persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
-						mencapai efektivitas dan efisiensi kerja.
-					</td>
-				</tr>
-				<tr>
-					<td>8</td>
-					<td>OPERATOR CCP 1</td>
-					<td>1</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min SMA</td>
-					<td>v</td>
-					<td>Min 1 tahun</td>
-					<td>Nilai rata-rata minimal 7,00</td>
-					<td>Memahami Sarang Burung Walet</td>
-					<td>Dapat bekerja secara individu teliti, kepemimpinan, disiplin</td>
-					<td>
-						Operator CCP 1 bertanggung jawab terhadap pelaksanaan pekerjaan
-						pembersihan produk sarang burung walet sesuai dengan target dan
-						standar perusahaan.
-					</td>
-					<td>
-						<ol type="1">
-							<li>Mempersiapkan sarana prasarana dan material cabut.</li>
-							<li>Melaksanakan
-								pekerjaan pembersihan produk sarang burung walet.</li>
-							<li>Memberikan saran
-								perbaikan berkelanjutan di workstation terkait.</li>
-							<li> Memastikan bahwa
-								pedoman kesehatan, keselamatan serta keamanan kerja dipatuhi di
-								workstation terkait.</li>
-							<li> Mengembangkan kompetensi di workstation nya</li>
-						</ol>
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja. 2 Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-						persuasif.
-					</td>
-				</tr>
-				<tr>
-					<td>9</td>
-					<td>Operator Cabut</td>
-					<td>1</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min SMA</td>
-					<td>-</td>
-					<td>Min 1 tahun</td>
-					<td>Nilai rata-rata minimal 7,00</td>
-					<td>Memahami Sarang Burung Walet</td>
-					<td>Dapat bekerja secara individu teliti,kepemimpinan,disiplin</td>
-					<td>
-						Operator cabut bertanggung jawab terhadap pelaksanaan pekerjaan
-						pembersihan produk sarang burung walet sesuai dengan target dan
-						standar perusahaan.
-					</td>
-					<td>
-						<ol type="1">
-							<li> Mempersiapkan sarana prasarana dan material cabut.</li>
-							<li>Melaksanakan
-								pekerjaan pembersihan produk sarang burung walet.</li>
-							<li>Memberikan saran
-								perbaikan berkelanjutan di workstation terkait.</li>
-							<li>Memastikan bahwa
-								pedoman kesehatan, keselamatan serta keamanan kerja dipatuhi di
-								workstation terkait.</li>
-							<li> Mengembangkan kompetensi di workstation nya.</li>
-						</ol>
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja. 2.Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-						persuasif.
-					</td>
-				</tr>
-				<tr>
-					<td>10</td>
-					<td>Checker Cabut Hancuran</td>
-					<td>2</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min SMA</td>
-					<td>-</td>
-					<td>Min 1 tahun</td>
-					<td>Nilai rata-rata minimal 7,00</td>
-					<td>Memahami Sarang Burung Walet</td>
-					<td>Dapat bekerja secara individu teliti,kepemimpinan,disiplin</td>
-					<td>
-						Checker cabut hancuran bertanggung jawab dan memastikan hasil
-						pembersihan sarang burung walet sesuai dengan standar
-					</td>
-					<td>
-						<ol type="1">
-							<li> Mempersiapkan sarana prasarana dan material (bahan kerja) dari TL
-								Cabut Hancuran.</li>
-							<li>Melaksanakan pengecekan dan pengontrolan guna
-								memastikan hasil pembersihan sarang burung walet sesuai dengan
-								standar.</li>
-							<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan
-								pembuatan laporan di workstation terkait.</li>
-							<li>Memastikan bahwa pedoman
-								kesehatan, keselamatan serta keamanan kerja dipatuhi di workstation
-								terkait.</li>
-							<li>Mengembangkan kompetensi di workstation nya.</li>
-						</ol>
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin, dan komunikasi jelas serta
-						persuasif
-					</td>
-				</tr>
-				<tr>
-					<td>11</td>
-					<td>Trainer Cabut</td>
-					<td>2</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min SMA</td>
-					<td>-</td>
-					<td>Min 2 tahun</td>
-					<td>Min. Nilai Rata Rata 80</td>
-					<td>Memahami 5R, Ms. Office, Memahami GMP dan HACCP</td>
-					<td>
-						Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
-					</td>
-					<td>
-						Team Leader Cabut bertanggung jawab untuk mengontrol kapasitas,
-						produktivitas dan kualitas hasil Cabut dalam keseharian, sehingga
-						mencapai target yang diharapkan perusahaan.
-					</td>
-					<td>
-						<ol type="1">
-							<li> Melakukan pendistribusian barang yang akan dikerjakan oleh operator
-								dengan tahapan : a. Mastikan barang yang akan dikerjakan operator
-								sesuai dengan jenis barang. b. Memastikan kesesuaian antara barang
-								dengan label. c. Memastikan operator baru menerima barang sesuai
-								dengan target. </li>
-							<li>Memastikan operator baru memenuhi kompeten dan
-								komitmen yang sesuai dengan standar perusahaan.</li>
-							<li>Melakukan evaluasi,
-								saran perbaikan berkelanjutan dan pembuatan laporan di workstation
-								terkait.</li>
-							<li>Memastikan bahwa pedoman kesehatan, keselamatan serta
-								keamanan kerja dipatuhi di workstation terkait. </li>
-							<li> Mengembangkan
-								kompetensi di workstation nya</li>
-						</ol>
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-						persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
-						mencapai efektivitas dan efisiensi kerja.
-					</td>
-				</tr>
-				<tr>
-					<td>12</td>
-					<td>TEAM LEADER CCP 1 CABUT</td>
-					<td>1</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min SMA</td>
-					<td>-</td>
-					<td>Min 2 tahun</td>
-					<td>Min. Nilai Rata Rata 80</td>
-					<td>Memahami 5R, Ms. Office, Memahami GMP dan HACCP</td>
-					<td>
-						Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
-					</td>
-					<td>
-						Team Leader Cabut bertanggung jawab untuk mengontrol kapasitas,
-						produktivitas dan kualitas hasil Cabut dalam keseharian, sehingga
-						mencapai target yang diharapkan perusahaan.
-					</td>
-					<td>
-						<ol type="1">
-							<li>Melakukan pendistribusian dan memastikan barang yang akan
-								dikerjakan operator sesuai dengan standar.</li>
-							<li>Memastikan kualitas dan
-								kuantitas proses produksi sesuai standar yang telah ditentukan.</li>
-							<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan pembuatan
-								laporan di workstation terkait.</li>
-							<li> Memastikan bahwa pedoman kesehatan,
-								keselamatan serta keamanan kerja dipatuhi di workstation terkait.</li>
-							<li>Mengembangkan bawahan baik secara kompeten dan komitmen sehingga
-								didapatkan bawahan yang siap dipromosikan dalam jangka waktu 1-2 tahun
-								kedepan.</li>
-						</ol>
-
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-						persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
-						mencapai efektivitas dan efisiensi kerja.
-					</td>
-				</tr>
-				<tr>
-					<td>13</td>
-					<td>Team Leader cabut hancuran</td>
-					<td>2</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min SMA</td>
-					<td>-</td>
-					<td>Min 2 tahun</td>
-					<td>Min. Nilai Rata Rata 80</td>
-					<td>Memahami 5R, Ms. Office, Memahami GMP dan HACCP</td>
-					<td>
-						Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
-					</td>
-					<td>
-						Team Leader Cabut bertanggung jawab untuk mengontrol kapasitas,
-						produktivitas dan kualitas hasil Cabut dalam keseharian, sehingga
-						mencapai target yang diharapkan perusahaan.
-					</td>
-					<td>
-						<ol type="1">
-							<li> Melakukan pendistribusian barang yang akan dikerjakan oleh operator
-								dengan tahapan : a. Mastikan barang yang akan dikerjakan operator
-								sesuai dengan jenis barang. b. Memastikan kesesuaian antara barang
-								dengan label. c. Memastikan bawahan/operator menerima barang sesuai
-								dengan target.</li>
-							<li>a. Memastikan hasil susutan tidak melebihi standar
-								yang telah ditentukan. b. Melakukan evaluasi, saran perbaikan
-								berkelanjutan dan pembuatan laporan di workstation terkait.</li>
-							<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan pembuatan
-								laporan di workstation terkait. </li>
-							<li>Memastikan bahwa pedoman kesehatan,
-								keselamatan serta keamanan kerja dipatuhi di workstation terkait.</li>
-							<li>Mengembangkan bawahan baik secara kompeten dan komitmen sehingga
-								didapatkan bawahan yang siap dipromosikan dalam jangka waktu 1-2 tahun
-								kedepan.</li>
-						</ol>
-
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-						persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
-						mencapai efektivitas dan efisiensi kerja.
-					</td>
-				</tr>
-				<tr>
-					<td>14</td>
-					<td>TEAM LEADER CABUT MANGKOK</td>
-					<td>2</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min SMA</td>
-					<td>-</td>
-					<td>Min 2 tahun</td>
-					<td>Nilai rata-rata minimal 80</td>
-					<td>Memahami 5R, Ms. Office, Memahami GMP dan HACCP</td>
-					<td>
-						Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
-					</td>
-					<td>
-						Team Leader Cabut bertanggung jawab untuk mengontrol kapasitas,
-						produktivitas dan kualitas hasil Cabut dalam keseharian, sehingga
-						mencapai target yang diharapkan perusahaan.
-					</td>
-					<td>
-						<ol type="1">
-							<li> Melakukan pendistribusian barang yang akan dikerjakan oleh operator
-								dengan tahapan : a. Mastikan barang yang akan dikerjakan operator
-								sesuai dengan jenis barang. b. Memastikan kesesuaian antara barang
-								dengan label. c. Memastikan bawahan/operator menerima barang sesuai
-								dengan target.</li>
-							<li>a. Memastikan hasil susutan tidak melebihi standar
-								yang telah ditentukan. b. Melakukan evaluasi, saran perbaikan
-								berkelanjutan dan pembuatan laporan di workstation terkait.</li>
-							<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan pembuatan
-								laporan di workstation terkait.</li>
-							<li>Memastikan bahwa pedoman kesehatan,
-								keselamatan serta keamanan kerja dipatuhi di workstation terkait. </li>
-							<li>Mengembangkan bawahan baik secara kompeten dan komitmen sehingga
-								didapatkan bawahan yang siap dipromosikan dalam jangka waktu 1-2 tahun
-								kedepan.</li>
-						</ol>
-
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-						persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
-						mencapai efektivitas dan efisiensi kerja.
-					</td>
-				</tr>
-				<tr>
-					<td>15</td>
-					<td>Admin Cabut</td>
-					<td>2</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min SMA</td>
-					<td>-</td>
-					<td>Min 2 tahun</td>
-					<td>Nilai rata-rata minimal 80</td>
-					<td>Memahami MS office, 5R</td>
-					<td>
-						Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
-					</td>
-					<td>
-						Admin Cabut bertanggung jawab atas pembuatan analisa dan laporan
-						pencapaian produksi di workstation setiap hari sehingga dapat mencapai
-						laporan data yang akurat, tepat waktu dan mampu telusur.
-					</td>
-					<td>
-						<ol type="1">
-							<li> Melakukan penarikan data dari workstation sebelumnya dan memastikan
-								kebenaran data stock setiap hari di workstation Cabut.</li>
-							<li>a. Melakukan
-								penginputan penyebaran barang yang akan dikerjakan oleh operator cabut
-								mangkok. b. Melakukan analisa data berdasarkan laporan stock dan
-								produktivitas.</li>
-							<li>Melakukan evaluasi, saran perbaikan berkelanjutan
-								dan pembuatan laporan di bagian terkait.</li>
-							<li>Memastikan bahwa pedoman
-								kesehatan, keselamatan serta keamanan kerja dipatuhi di bagian
-								terkait.</li>
-							<li>Mengembangkan kemampuan terkait ilmu administrasi.</li>
-						</ol>
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-						persuasif.
-					</td>
-				</tr>
-				<tr>
-					<td>16</td>
-					<td>ADMIN DRYING</td>
-					<td>2</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min SMA</td>
-					<td>-</td>
-					<td>Min 2 tahun</td>
-					<td>Nilai rata-rata minimal 80</td>
-					<td>Memahami MS office, 5R</td>
-					<td>
-						Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
-					</td>
-					<td>
-						Admin Drying bertanggung jawab atas pembuatan analisa dan laporan
-						pencapaian produksi di workstation setiap hari sehingga dapat mencapai
-						laporan data yang akurat, tepat waktu dan mampu telusur.
-					</td>
-					<td>
-						<ol type="1">
-							<li>Melakukan penarikan data dari workstation sebelumnya dan memastikan
-								kebenaran data stock setiap hari di workstation Drying.</li>
-							<li>a.
-								Melakukan penginputan barang hasil pekerjaan operator cabut mangkok.
-								b. Melakukan analisa data berdasarkan laporan stock dan produktivitas.</li>
-							<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan pembuatan
-								laporan di bagian terkait.</li>
-							<li>Memastikan bahwa pedoman kesehatan,
-								keselamatan serta keamanan kerja dipatuhi di bagian terkait. </li>
-							<li>Mengembangkan kemampuan terkait ilmu administrasi.</li>
-						</ol>
-
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-						persuasif.
-					</td>
-				</tr>
-				<tr>
-					<td>17</td>
-					<td>Group Team Leader Drying</td>
-					<td>3</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min SMA</td>
-					<td>-</td>
-					<td>Min 2 tahun</td>
-					<td>Nilai rata-rata minimal 80</td>
-					<td>
-						Memahami 5R, Ms. Office, Memahami GMP dan HACCP, mampu membuat stock
-					</td>
-					<td>
-						Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
-					</td>
-					<td>
-						Group Team Leader Drying bertanggung jawab untuk mengontrol kapasitas,
-						produktivitas dan kualitas hasil Drying dalam keseharian, sehingga
-						mencapai target yang ditetapkan oleh atasan sesuai dengan perencanaan
-						PPIC.
-					</td>
-					<td>
-						<ol type="1">
-							<li>Merencanakan dan mengawasi proses produksi berdasarkan informasi
-								dari atasan dengan cara: a. Memastikan stok. b. Memastikan kualitas
-								dan kuantitas proses timbang sesuai dengan standar yang telah
-								ditetapkan.</li>
-							<li> Melakukan evaluasi, saran perbaikan berkelanjutan dan
-								pembuatan laporan di workstation terkait.</li>
-							<li>Memastikan bahwa pedoman
-								kesehatan, keselamatan serta keamanan kerja dipatuhi di workstation
-								terkait.</li>
-							<li>Mengembangkan bawahan baik secara kompeten dan komitmen
-								sehingga didapatkan bawahan yang siap dipromosikan dalam jangka waktu
-								1-2 tahun kedepan.</li>
-
-						</ol>
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-						persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
-						mencapai efektivitas dan efisiensi kerja.
-					</td>
-				</tr>
-				<tr>
-					<td>18</td>
-					<td>GROUP TEAM LEADER CABUT</td>
-					<td>3</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min SMA</td>
-					<td>-</td>
-					<td>Min 2 tahun</td>
-					<td>Nilai rata-rata minimal 80</td>
-					<td>
-						Memahami 5R, Ms. Office, Memahami GMP dan HACCP, mampu membuat stock
-					</td>
-					<td>
-						Berjiwa tegas, teliti, kepemimpinan, disiplin, dan bertanggung jawab
-					</td>
-					<td>
-						Group Team Leader Cabut bertanggung jawab untuk mengontrol kapasitas,
-						produktivitas dan kualitas hasil Cabut Mangkok, Cabut Hancuran, dan
-						CCP 1 dalam keseharian, sehingga mencapai target yang ditetapkan oleh
-						atasan sesuai dengan perencanaan PPIC.
-					</td>
-					<td>
-						<ol type="1">
-							<li>Merencanakan dan mengawasi proses produksi berdasarkan informasi
-								dari atasan dengan cara: a. Memastikan stok. b. Melakukan perhitungan
-								kebutuhan kapasitas cabut mangkok, cabut hancuran dan CCP1 per hari.
-								c. Memastikan kulitas dan kuantitas proses cabut mangkok, cabut
-								hancuran dan CCP1 sesuai dengan standar yang telah ditetapkan.</li>
-							<li>Mengontrol hasil susutan agar tidak melebihi standar yang telah
-								ditentukan. </li>
-							<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan
-								pembuatan laporan di workstation terkait.</li>
-							<li>Memastikan bahwa pedoman
-								kesehatan, keselamatan serta keamanan kerja dipatuhi di workstation
-								terkait.</li>
-							<li> Mengembangkan bawahan baik secara kompeten dan komitmen
-								sehingga didapatkan bawahan yang siap dipromosikan dalam jangka waktu
-								1-2 tahun kedepan.</li>
-						</ol>
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-						persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
-						mencapai efektivitas dan efisiensi kerja.
-					</td>
-				</tr>
-				<tr>
-					<td>19</td>
-					<td>SUPERVISOR CABUT & DRYING</td>
-					<td>4</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min D3 Semua Jurusan</td>
-					<td>-</td>
-					<td>Min 2 tahun</td>
-					<td>Min IPK 3.00</td>
-					<td>Memahami MS office, 5R, HACCP & GMP</td>
-					<td>
-						Berjiwa kepemimpinan, mampu bekerja sama antar team, dapat
-						berkomunikasi dengan baik
-					</td>
-					<td>
-						Supervisor cabut & drying bertanggung jawab untuk mengawasi pencapaian
-						produksi, mengontrol stok, kapasitas, produktivitas, susut sesuai
-						standar dan kualitas di bagiannya sesuai dengan perencanaan PPIC dalam
-						kesehariannya sehingga dapat mencapai target, tepat jumlah, tepat
-						kualitas, dan tepat waktu.
-					</td>
-					<td>
-						<ol type="1">
-							<li>a. Merencanakan kebutuhan SDM dengan tepat baik kompeten maupun
-								komitmen. b. Penyediaan sarana dan prasarana kerja untuk memenuhi
-								kapasitas produksi di bagiannya per hari.</li>
-							<li> a. Menyediakan bahan atau
-								material kerja. b. Melakukan kontrol stok/WIP. c. Mengawasi semua
-								aktivitas operasional di bagian terkait sesuai dengan SOP, WI dan
-								kebijakan Departemen agar tercapainya kualitas dan kuantitas serta
-								target yang ditetapkan oleh perencanaan PPIC.</li>
-							<li> Melakukan evaluasi,
-								saran perbaikan berkelanjutan dan pembuatan laporan di bagian terkait.</li>
-							<li> Memastikan bahwa pedoman kesehatan, keselamatan serta keamanan
-								kerja dipatuhi di bagian terkait. </li>
-							<li> Mengembangkan bawahan baik secara
-								kompeten dan komitmen sehingga didapatkan bawahan yang siap
-								dipromosikan dalam jangka waktu 1-2 tahun kedepan.</li>
-						</ol>
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-						persuasif. 3. Melakukan coaching and counseling kepada bawahan untuk
-						mencapai efektivitas dan efisiensi kerja.
-					</td>
-				</tr>
-				<tr>
-					<td>20</td>
-					<td>OPERATOR PACKING</td>
-					<td>1</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min SMA</td>
-					<td>v</td>
-					<td>Min 1 tahun</td>
-					<td>Nilai rata-rata minimal 7,00</td>
-					<td>Memahami Sarang Burung Walet</td>
-					<td>Dapat bekerja secara individu teliti,kepemimpinan,disiplin</td>
-					<td>
-						Operator packing - harian bertanggung jawab terhadap pelaksanaan
-						pekerjaan pembuatan produk packing (steam / semprot / timbang patahan
-						/ vakum / kleam / sring / timbang pcs / grading bentuk warna / input
-						stok / gabung stok / hitung gramasi / tempel stiker / scan out /
-						packing ).
-					</td>
-					<td>
-						<ol type="1">
-							<li> Mempersiapkan sarana prasarana dan material packing.</li>
-							<li>Melaksanakan (steam /semprot /timbang patahan /vakum /kleam /sring
-								/timbang pcs /grading bentuk warna /input stok /gabung stok /hitung
-								gramasi /tempel stiker / scan out / packing ) sesuai standar.</li>
-							<li>Memberikan saran perbaikan berkelanjutan di workstation terkait.</li>
-							<li>Memastikan bahwa pedoman kesehatan, keselamatan serta keamanan kerja
-								dipatuhi di workstation terkait.</li>
-							<li>
-								5. Mengembangkan kompetensi di
-								workstation nya.</li>
-						</ol>
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-						persuasif.
-					</td>
-				</tr>
-				<tr>
-					<td>21</td>
-					<td>Checker packing</td>
-					<td>2</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min SMA</td>
-					<td>v</td>
-					<td>Min 1 tahun</td>
-					<td>Nilai rata-rata minimal 7,00</td>
-					<td>Memahami Sarang Burung Walet</td>
-					<td>Dapat bekerja secara individu teliti, kepemimpinan, disiplin,</td>
-					<td>
-						Checker packing bertanggung jawab dan memastikan hasil proses packing
-						sudah memenuhi standar.
-					</td>
-					<td>
-						<ol type="1">
-							<li>Mempersiapkan sarana prasarana dan material (bahan kerja) dari TL
-								packing.</li>
-							<li>Melaksanakan pengecekan dan pengontrolan guna memastikan
-								hasil packing yang sesuai standar.</li>
-							<li> Melakukan evaluasi, saran
-								perbaikan berkelanjutan dan pembuatan laporan di workstation terkait.</li>
-							<li>Memastikan bahwa pedoman kesehatan, keselamatan serta keamanan
-								kerja dipatuhi di workstation terkait.</li>
-							<li> Mengembangkan kompetensi di
-								workstation nya.</li>
-						</ol>
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-						persuasif.
-					</td>
-				</tr>
-				<tr>
-					<td>22</td>
-					<td>Admin Packing</td>
-					<td>2</td>
-					<td>v</td>
-					<td>v</td>
-					<td>18-35 thun</td>
-					<td>Min. D3 Semua jurusan</td>
-					<td>v</td>
-					<td>Min 1 tahun</td>
-					<td>Nilai rata-rata minimal 7,00</td>
-					<td>Memahami MS office, 5R</td>
-					<td>
-						Berjiwa kepemimpinan, mampu bekerja sama antar team, dapat
-						berkomunikasi dengan baik
-					</td>
-					<td>
-						Admin Packing bertanggung jawab atas pembuatan analisa dan laporan
-						pencapaian produksi di workstation setiap hari sehingga dapat mencapai
-						laporan data yang akurat, tepat waktu dan mampu telusur.
-					</td>
-					<td>
-						<ol type="1">
-							<li>Melakukan penarikan data dari workstation sebelumnya dan memastikan
-								kebenaran data stock setiap hari di workstation Packing. </li>
-							<li>a.
-								Melakukan pengontrolan data yang telah discan oleh operator packing.
-								b. Melakukan analisa data berdasarkan laporan stock dan produktivitas.</li>
-							<li>Melakukan evaluasi, saran perbaikan berkelanjutan dan pembuatan
-								laporan di bagian terkait.</li>
-							<li> bahwa pedoman kesehatan,
-								keselamatan serta keamanan kerja dipatuhi di bagian terkait</li>
-							<li>Mengembangkan kemampuan terkait ilmu administrasi.</li>
-						</ol>
-
-
-					</td>
-					<td>
-						1. Menjalankan budaya kerja. Memiliki leadership, integritas,
-						inisiatif, teliti, mandiri, disiplin dan komunikasi jelas serta
-						persuasif.
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-	</div>
 	</div>
 
 	<!-- Custom template | don't include it in your project! -->
+	<div class="custom-template">
+		<div class="title">Settings</div>
+		<div class="custom-content">
+			<div class="switcher">
+				<div class="switch-block">
+					<h4>Logo Header</h4>
+					<div class="btnSwitch">
+						<button type="button" class="changeLogoHeaderColor" data-color="dark"></button>
+						<button type="button" class="changeLogoHeaderColor" data-color="blue"></button>
+						<button type="button" class="selected changeLogoHeaderColor" data-color="purple"></button>
+						<button type="button" class="changeLogoHeaderColor" data-color="light-blue"></button>
+						<button type="button" class="changeLogoHeaderColor" data-color="green"></button>
+						<button type="button" class="changeLogoHeaderColor" data-color="orange"></button>
+						<button type="button" class="changeLogoHeaderColor" data-color="red"></button>
+						<button type="button" class="changeLogoHeaderColor" data-color="white"></button>
+						<br />
+						<button type="button" class="changeLogoHeaderColor" data-color="dark2"></button>
+						<button type="button" class="changeLogoHeaderColor" data-color="blue2"></button>
+						<button type="button" class="changeLogoHeaderColor" data-color="purple2"></button>
+						<button type="button" class="changeLogoHeaderColor" data-color="light-blue2"></button>
+						<button type="button" class="changeLogoHeaderColor" data-color="green2"></button>
+						<button type="button" class="changeLogoHeaderColor" data-color="orange2"></button>
+						<button type="button" class="changeLogoHeaderColor" data-color="red2"></button>
+					</div>
+				</div>
+				<div class="switch-block">
+					<h4>Navbar Header</h4>
+					<div class="btnSwitch">
+						<button type="button" class="changeTopBarColor" data-color="dark"></button>
+						<button type="button" class="changeTopBarColor" data-color="blue"></button>
+						<button type="button" class="changeTopBarColor" data-color="purple"></button>
+						<button type="button" class="changeTopBarColor" data-color="light-blue"></button>
+						<button type="button" class="changeTopBarColor" data-color="green"></button>
+						<button type="button" class="changeTopBarColor" data-color="orange"></button>
+						<button type="button" class="changeTopBarColor" data-color="red"></button>
+						<button type="button" class="changeTopBarColor" data-color="white"></button>
+						<br />
+						<button type="button" class="changeTopBarColor" data-color="dark2"></button>
+						<button type="button" class="changeTopBarColor" data-color="blue2"></button>
+						<button type="button" class="selected changeTopBarColor" data-color="purple2"></button>
+						<button type="button" class="changeTopBarColor" data-color="light-blue2"></button>
+						<button type="button" class="changeTopBarColor" data-color="green2"></button>
+						<button type="button" class="changeTopBarColor" data-color="orange2"></button>
+						<button type="button" class="changeTopBarColor" data-color="red2"></button>
+					</div>
+				</div>
+				<div class="switch-block">
+					<h4>Sidebar</h4>
+					<div class="btnSwitch">
+						<button type="button" class="selected changeSideBarColor" data-color="white"></button>
+						<button type="button" class="changeSideBarColor" data-color="dark"></button>
+						<button type="button" class="changeSideBarColor" data-color="dark2"></button>
+					</div>
+				</div>
+				<div class="switch-block">
+					<h4>Background</h4>
+					<div class="btnSwitch">
+						<button type="button" class="changeBackgroundColor" data-color="bg2"></button>
+						<button type="button" class="changeBackgroundColor selected" data-color="bg1"></button>
+						<button type="button" class="changeBackgroundColor" data-color="bg3"></button>
+						<button type="button" class="changeBackgroundColor" data-color="dark"></button>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<div class="custom-toggle">
+			<i class="flaticon-settings"></i>
+		</div>
+	</div>
 	<!-- End Custom template -->
 	</div>
 	<!--   Core JS Files   -->
